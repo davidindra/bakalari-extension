@@ -1,0 +1,17 @@
+javascript:
+var zisk = 0;
+var max = 0;
+var el = document.getElementsByClassName('detznb');
+for(var i = 0; i < el.length; i++){
+ var num = parseInt(el[i].innerText);
+ if(num > 0){
+  zisk = zisk + num;
+
+  var tmp = el[i].innerText;
+  tmp = tmp.split("(max")[1];
+  tmp = tmp.split("b")[0];
+  var num2 = parseInt(tmp);
+  if(num2 > 0) max = max + num2;
+ }
+}
+var x = document.getElementsByClassName('detprumerdiv')[0].innerHTML += '&nbsp;&nbsp;&nbsp;<a target="_blank" style="color:red;font-weight:bold;" href="http://skola.davidindra.cz/predvidac/?zisk=' + zisk + '&max=' + max + '">PŘEDVÍDAČ ZNÁMEK</a>';
