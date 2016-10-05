@@ -2,7 +2,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Předvídač známky</title>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
