@@ -1,6 +1,4 @@
-function injectPredictor(){
-  if(predictorInjected) return;
-
+if(!predictorInjected) {
   if(document.getElementsByTagName('frameset').length == 0){
    var node = document.head;
   }else{
@@ -13,5 +11,3 @@ function injectPredictor(){
 
   var predictorInjected = true;
 }
-
-injectPredictor();

@@ -7,17 +7,14 @@ class Predictor {
   }
 }
 
-function launchPredictor(){
-  if(predictorLaunched) return;
-  var predictorLaunched = true;
+if(predictorLaunched) throw new Error("Predictor already launched.");
 
-  if(document.getElementsByTagName('frameset').length == 0){
-   var doc = document;
-  }else{
-   var doc = parent.frames[1].document;
-  }
-
-  var predictor = new Predictor(doc);
+if(document.getElementsByTagName('frameset').length == 0){
+ var doc = document;
+}else{
+ var doc = parent.frames[1].document;
 }
 
-launchPredictor();
+var predictor = new Predictor(doc);
+
+var predictorLaunched = true;
