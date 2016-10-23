@@ -1,5 +1,5 @@
 class Predictor {
-  function Predictor(doc){
+  Predictor(doc){
     this.doc = doc;
 
     console.log("Predictor 0.1");
