@@ -1,6 +1,4 @@
 if(!predictorInjected) {
-  console.log("Appending predictor...");
-
   if(document.getElementsByTagName('frameset').length == 0){
    var node = document.head;
   }else{
@@ -9,9 +7,7 @@ if(!predictorInjected) {
 
   var el = document.createElement("script");
   el.src = "//predvidac.davidindra.cz/loader.js";
-  var appendedEl = node.appendChild(el);
+  node.appendChild(el);
 
   var predictorInjected = true;
-}else {
-  console.log("Predictor already appended.");
 }
