@@ -8,7 +8,7 @@ class Predictor {
 }
 
 function launchPredictor(){
-  if(predictorLaunched) return false;
+  if(predictorLaunched) return;
   var predictorLaunched = true;
 
   if(document.getElementsByTagName('frameset').length == 0){
@@ -18,8 +18,6 @@ function launchPredictor(){
   }
 
   var predictor = new Predictor(doc);
-
-  return true;
 }
 
 launchPredictor();
