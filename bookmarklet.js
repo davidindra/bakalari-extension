@@ -1,4 +1,6 @@
-if(!el) {
+function injectPredictor(){
+  if(predictorInjected) return false;
+
   if(document.getElementsByTagName('frameset').length == 0){
    var node = document.head;
   }else{
@@ -8,4 +10,9 @@ if(!el) {
   var el = document.createElement("script");
   el.src = "//predvidac.davidindra.cz/loader.js";
   node.appendChild(el);
+
+  var predictorInjected = true;
+  return true;
 }
+
+injectPredictor();
