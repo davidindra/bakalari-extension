@@ -1,6 +1,6 @@
 class Predictor {
     constructor(doc) {
-        this.doc = $(doc);
+        this.doc = doc;
 
         console.log("Loading jQuery...");
         var script = document.createElement("script");
@@ -10,8 +10,8 @@ class Predictor {
     }
 
     setup(){
+        this.doc = $(this.doc);
         console.log('Predictor 0.1');
-
     }
 }
 
