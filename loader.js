@@ -12,14 +12,16 @@ class Predictor {
     }
 }
 
-if (predictorLaunched) throw new Error("Predictor already launched.");
-
-if ($('frameset').length == 0) {
-    var doc = document;
+if (predictorLaunched) {
+    throw new Error("Predictor already launched.");
 } else {
-    var doc = parent.frames[1].document;
+    if ($('frameset').length == 0) {
+        var doc = document;
+    } else {
+        var doc = parent.frames[1].document;
+    }
+
+    var predictor = new Predictor(doc);
+
+    var predictorLaunched = true;
 }
-
-var predictor = new Predictor(doc);
-
-var predictorLaunched = true;
