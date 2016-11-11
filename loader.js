@@ -46,8 +46,10 @@ class Predictor {
             });
 
             $(this).find('td:nth-child(4) > table > tbody > tr').prepend(
-                '<td>' + earnedTotal + '/' + maximumTotal + '<br>~ ' + ratioTotal + '%</td>'
+                '<td>' + earnedTotal + '/' + maximumTotal + '</td>'
             );
+
+            $(this).find('td:nth-child(2)').text('<div class="detprumerdiv">' + ratioTotal + '%</div>')
         });
     }
 }
