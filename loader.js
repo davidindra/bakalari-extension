@@ -4,13 +4,9 @@ class Predictor {
 
         console.log("Loading jQuery...");
         var script = document.createElement("script");
-        script.onload = this.setup;
+        script.onload = predictor.setup;
         script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js";
         this.doc.head.appendChild(script);
-    }
-
-    gradesOverview(){
-        alert('Fajn, jede to!');
     }
 
     setup(){
@@ -23,10 +19,14 @@ class Predictor {
         }
 
         if($('#cphmain_Panelprub').length){
-            this.gradesOverview();
+            predictor.gradesOverview();
         }else{
             throw new Error('Unsupported page.');
         }
+    }
+
+    gradesOverview(){
+        alert('Fajn, jede to!');
     }
 }
 
