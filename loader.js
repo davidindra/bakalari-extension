@@ -11,7 +11,7 @@ class Predictor {
 }
 
 if (!predictorLaunched) {
-    if ($('frameset').length == 0) {
+    if (document.getElementsByTagName('frameset').length == 0) {
         var doc = document;
     } else {
         var doc = parent.frames[1].document;
