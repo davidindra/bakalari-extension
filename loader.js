@@ -1,14 +1,4 @@
 class Predictor {
-    constructor(doc) {
-        this.doc = doc;
-
-        console.log("Loading jQuery...");
-        var script = document.createElement("script");
-        script.onload = this.setup;
-        script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js";
-        this.doc.head.appendChild(script);
-    }
-
     setup(){
         this.doc = $(this.doc);
         console.log('Predictor 0.1');
@@ -27,6 +17,16 @@ class Predictor {
 
     gradesOverview(){
         alert('Fajn, jede to!');
+    }
+
+    constructor(doc) {
+        this.doc = doc;
+
+        console.log("Loading jQuery...");
+        var script = document.createElement("script");
+        script.onload = this.setup;
+        script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js";
+        this.doc.head.appendChild(script);
     }
 }
 
