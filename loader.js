@@ -11,11 +11,18 @@ class Predictor {
 
     setup(){
         this.doc = $(this.doc);
+        $ = this.doc;
         console.log('Predictor 0.1');
 
         var usertype = $('div.globlogjmeno > table > tbody > tr:nth-child(1) > td:nth-child(2)').text();
         if(usertype != 'žák' && usertype != 'rodič'){
             throw new Error('Unsupported user type.');
+        }
+
+        if($('#cphmain_Panelprub')){
+            alert('Fajn, jede to!');
+        }else{
+            throw new Error('Unsupported page.');
         }
     }
 }
