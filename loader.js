@@ -7,6 +7,7 @@ class Predictor {
         this.doc.head.appendChild(el);
 
         console.log("Predictor 0.1");
+        console.log($('html'));
     }
 }
 
