@@ -49,7 +49,7 @@ class Predictor {
                 '<td>' + earnedTotal + '/' + maximumTotal + '</td>'
             );
 
-            $(this).find('td:nth-child(2)').text('<div class="detprumerdiv">' + ratioTotal + '%</div>')
+            $(this).find('td:nth-child(2)').html('<div class="detprumerdiv">' + ratioTotal + '%</div>')
         });
     }
 }
