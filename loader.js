@@ -26,7 +26,22 @@ class Predictor {
     }
 
     gradesOverview(){
-        alert('Fajn, jede to!');
+        $('#cphmain_roundprub_RPC > div > div > table > tbody > tr').each(function(){
+            var earnedTotal = 0, maximumTotal = 0;
+            $(this).find('td:nth-child(4) > table > tbody > tr > td').each(function(){
+                if($(this).text().length > 5) {
+                    var earned = parseInt($(this).text().split(' ')[0]);
+                    var maximum = parseInt($(this).text().split(' ')[1].split('max')[1].split('b')[0]);
+                    if (typeof earned == 'number' && typeof maximum == 'number') {
+                        earnedTotal += earned;
+                        maximumTotal += maximum;
+                    }
+                }
+            });
+            $(this).attr('data-earned', earnedTotal);
+            $(this).attr('data-maximum', maximumTotal);
+            $(this).attr('data-ratio', +(earnedTotal / maximumTotal * 100).toFixed(2));
+        });
     }
 }
 
