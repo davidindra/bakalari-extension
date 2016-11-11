@@ -28,7 +28,7 @@ class Predictor {
     gradesOverview() {
         $('#cphmain_roundprub_RPC > div > div > table > tbody > tr').each(function () {
             var earnedTotal = 0, maximumTotal = 0;
-            $(this).find('td:nth-child(4) > table > tbody > tr > td').each(function () {
+            $(this).find('td.predm:nth-child(4) > table > tbody > tr > td').each(function () {
                 if ($(this).text().length > 5) {
                     var earned = parseInt($(this).text().split(' ')[0]);
                     var maximum = parseInt($(this).text().split(' ')[1].split('max')[1].split('b')[0]);
@@ -45,11 +45,11 @@ class Predictor {
                 ratio: ratioTotal
             });
 
-            $(this).find('td:nth-child(4) > table > tbody > tr').prepend(
+            $(this).find('td.predm:nth-child(4) > table > tbody > tr').prepend(
                 '<td>' + earnedTotal + '/' + maximumTotal + '</td>'
             );
 
-            $(this).find('td:nth-child(2)').html('<div class="detprumerdiv">' + ratioTotal + '%</div>')
+            $(this).find('td.predm:nth-child(2)').html('<div class="detprumerdiv">' + ratioTotal + '%</div>')
         });
     }
 }
