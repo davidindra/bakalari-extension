@@ -1,6 +1,4 @@
 class Predictor {
-    var doc;
-
     constructor(doc) {
         this.doc = doc;
 
