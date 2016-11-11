@@ -2,12 +2,12 @@ class Predictor {
     constructor(doc) {
         this.doc = doc;
 
-        var el = document.createElement("script");
-        el.onload = function() {
-            this.setup();
+        var script = document.createElement("script");
+        script.onload = function(t = this) {
+            t.setup();
         };
-        el.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js";
-        this.doc.head.appendChild(el);
+        script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js";
+        this.doc.head.appendChild(script);
 
         console.log("Predictor 0.1");
     }
