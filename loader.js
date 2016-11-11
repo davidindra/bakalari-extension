@@ -18,11 +18,15 @@ class Predictor {
             throw new Error('Unsupported user type.');
         }
 
-        if($('#cphmain_Panelprub')){
-            alert('Fajn, jede to!');
+        if($('#cphmain_Panelprub').length){
+            this.gradesOverview();
         }else{
             throw new Error('Unsupported page.');
         }
+    }
+
+    gradesOverview(){
+        alert('Fajn, jede to!');
     }
 }
 
