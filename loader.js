@@ -4,7 +4,7 @@ class Predictor {
 
         console.log("Loading jQuery...");
         var script = document.createElement("script");
-        script.onload = predictor.setup;
+        script.onload = this.setup;
         script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js";
         this.doc.head.appendChild(script);
     }
