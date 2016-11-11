@@ -12,9 +12,7 @@ class Predictor {
     }
 }
 
-if (predictorLaunched) {
-    throw new Error("Predictor already launched.");
-} else {
+if (!predictorLaunched) {
     if ($('frameset').length == 0) {
         var doc = document;
     } else {
@@ -24,4 +22,6 @@ if (predictorLaunched) {
     var predictor = new Predictor(doc);
 
     var predictorLaunched = true;
+} else {
+    throw new Error("Predictor already launched.");
 }
