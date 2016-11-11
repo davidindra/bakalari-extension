@@ -9,27 +9,27 @@ class Predictor {
         this.doc.head.appendChild(script);
     }
 
-    setup(){
+    setup() {
         this.doc = $(this.doc);
         console.log('Predictor 0.1');
 
         var usertype = $('div.globlogjmeno > table > tbody > tr:nth-child(1) > td:nth-child(2)').text();
-        if(usertype != 'žák' && usertype != 'rodič'){
+        if (usertype != 'žák' && usertype != 'rodič') {
             throw new Error('Unsupported user type.');
         }
 
-        if($('#cphmain_Panelprub').length){
+        if ($('#cphmain_Panelprub').length) {
             predictor.gradesOverview();
-        }else{
+        } else {
             throw new Error('Unsupported page.');
         }
     }
 
-    gradesOverview(){
-        $('#cphmain_roundprub_RPC > div > div > table > tbody > tr').each(function(){
+    gradesOverview() {
+        $('#cphmain_roundprub_RPC > div > div > table > tbody > tr').each(function () {
             var earnedTotal = 0, maximumTotal = 0;
-            $(this).find('td:nth-child(4) > table > tbody > tr > td').each(function(){
-                if($(this).text().length > 5) {
+            $(this).find('td:nth-child(4) > table > tbody > tr > td').each(function () {
+                if ($(this).text().length > 5) {
                     var earned = parseInt($(this).text().split(' ')[0]);
                     var maximum = parseInt($(this).text().split(' ')[1].split('max')[1].split('b')[0]);
                     if (typeof earned == 'number' && typeof maximum == 'number') {
@@ -38,9 +38,16 @@ class Predictor {
                     }
                 }
             });
-            $(this).attr('data-earned', earnedTotal);
-            $(this).attr('data-maximum', maximumTotal);
-            $(this).attr('data-ratio', +(earnedTotal / maximumTotal * 100).toFixed(2));
+            var ratioTotal = +(earnedTotal / maximumTotal * 100).toFixed(2);
+            $(this).data('predictor', {
+                earned: earnedTotal,
+                maximum: maximumTotal,
+                ratio: ratioTotal
+            });
+
+            $(this).find('td:nth-child(4) > table > tbody > tr').prepend(
+                '<td>' + earnedTotal + '/' + maximumTotal + ' ... ' + ratioTotal + '</td>'
+            );
         });
     }
 }
