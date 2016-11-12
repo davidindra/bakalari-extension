@@ -1,6 +1,6 @@
 console.log('Predictor extension triggered.');
 
-document.body.style.visibility = false;
+document.body.style.visibility = 'hidden';
 
 if (document.getElementsByTagName('frameset').length == 0) {
     var script = document.createElement("script");
