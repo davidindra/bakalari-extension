@@ -79,11 +79,11 @@ form#formbaka {
 }
 
 div.pr-users {
-  overflow: scroll;
+  overflow-y: scroll;
   height: 88vh;
   top: 50px;
   right: 0;
-  position: absolute;
+  position: fixed;
 }
 
 table.loglinktable {

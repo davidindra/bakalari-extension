@@ -69,11 +69,11 @@ form#formbaka {
   margin-right: 110px; }
 
 div.pr-users {
-  overflow: scroll;
+  overflow-y: scroll;
   height: 88vh;
   top: 50px;
   right: 0;
-  position: absolute; }
+  position: fixed; }
 
 table.loglinktable {
   border-spacing: 2px; }
