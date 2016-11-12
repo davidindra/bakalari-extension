@@ -21,13 +21,14 @@ class Predictor {
         if ($('#cphmain_Panelprub').length) {
             predictor.gradesOverview();
         } else {
+            predictor.finishSetup();
             throw new Error('Unsupported page.');
         }
 
-        predictor.finishSetup();
+        predictor.finishSetup(true);
     }
 
-    finishSetup() {
+    finishSetup(active = false) {
         $('head').append(
             '<link type="text/css" href="//predvidac.davidindra.cz/loader.css" rel="stylesheet">' +
             '<link type="text/css" href="//predvidac.davidindra.cz/opentip.css" rel="stylesheet">' +
@@ -35,7 +36,7 @@ class Predictor {
         );
 
         $('body').append(
-            '<img id="pr-logo" src="//predvidac.davidindra.cz/icon-48.png" data-ot="Bakaláři 2">'
+            '<img id="pr-logo"' + !active ? ' class="grayscale"' : '' + '" src="//predvidac.davidindra.cz/icon-48.png" data-ot="Bakaláři 2<br>&copy; David Indra">'
         );
     }
 

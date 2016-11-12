@@ -4,6 +4,8 @@ img#pr-logo {
   position: fixed;
   bottom: 10px;
   right: 10px; }
+  img#pr-logo.grayscale {
+    filter: grayscale(100%); }
 
 /* GRADES OVERVIEW */
 .radekznamky td {

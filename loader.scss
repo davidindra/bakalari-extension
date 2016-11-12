@@ -4,6 +4,10 @@ img#pr-logo {
   position: fixed;
   bottom: 10px;
   right: 10px;
+
+  &.grayscale {
+    filter: grayscale(100%);
+  }
 }
 
 /* GRADES OVERVIEW */
