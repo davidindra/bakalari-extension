@@ -20,6 +20,6 @@ $grade-colors: (
 
 @each $grade, $color in $grade-colors {
   .pr-grade-#{$grade} {
-    color: $color !important;
+    background-color: $color !important;
   }
 }

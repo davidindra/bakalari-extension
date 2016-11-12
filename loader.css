@@ -9,18 +9,18 @@ img#pr-logo {
   vertical-align: middle; }
 
 .pr-grade-1 {
-  color: #00C91D !important; }
+  background-color: #00C91D !important; }
 
 .pr-grade-2 {
-  color: #B7E807 !important; }
+  background-color: #B7E807 !important; }
 
 .pr-grade-3 {
-  color: #FFC800 !important; }
+  background-color: #FFC800 !important; }
 
 .pr-grade-4 {
-  color: #E8730C !important; }
+  background-color: #E8730C !important; }
 
 .pr-grade-5 {
-  color: #FF1D0D !important; }
+  background-color: #FF1D0D !important; }
 
 /*# sourceMappingURL=loader.css.map */
