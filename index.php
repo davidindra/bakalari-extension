@@ -7,8 +7,8 @@
     <link rel="icon" href="/favicon.ico">
 
     <meta property="og:url" content="https://predvidac.davidindra.cz"/>
-    <meta property="fb:app_id" content="1810644119194832"/>
     <meta property="og:type" content="website"/>
+    <meta property="fb:app_id" content="1810644119194832"/>
     <meta property="og:locale" content="cs_cz"/>
     <meta property="og:title" content="Předvídač známek"/>
     <meta property="og:description"
