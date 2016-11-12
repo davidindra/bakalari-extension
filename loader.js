@@ -56,12 +56,12 @@ class Predictor {
 
                     if (valid) {
                         $(this)
-                            .attr('data-ot', $(this).title)
+                            .attr('data-ot', $(this).attr('title'))
                             .attr('title', null)
                             .html('<sup>' + earned + '</sup><i>/</i><sub>' + maximum + '</sub>');
                     } else {
                         $(this)
-                            .attr('data-ot', $(this).title)
+                            .attr('data-ot', $(this).attr('title'))
                             .attr('title', null)
                             .html($(this).text());
                     }
