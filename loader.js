@@ -79,7 +79,6 @@ class Predictor {
         if(percent >= 54.5) return 3;
         if(percent >= 39.5) return 4;
         if(percent >= 0) return 5;
-        return null;
     }
 }
 
