@@ -58,7 +58,7 @@ class Predictor {
                         $(this)
                             .attr('data-ot', $(this).title)
                             .attr('title', null)
-                            .html("<sup>$(earned)</sup><i>/</i><sub>$(maximum)</sub>");
+                            .html('<sup>' + earned + '</sup><i>/</i><sub>' + maximum + '</sub>');
                     } else {
                         $(this)
                             .attr('data-ot', $(this).title)
