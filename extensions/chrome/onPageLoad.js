@@ -1,12 +1,28 @@
 console.log('Predictor extension triggered.');
 
-document.body.style.visibility = 'hidden';
+document.getElementsByTagName("html")[0].style.visibility = 'hidden';
 
-if (document.getElementsByTagName('frameset').length == 0) {
-    var script = document.createElement("script");
-    script.src = "//predvidac.davidindra.cz/loader.js";
+var loader = document.createElement('div');
+loader.className = 'pr-loader';
+loader.style.visibility = 'visible';
 
-    document.body.appendChild(script);
-} else {
-    window.location = 'http://cmg.prostejov.cz/bakaweb';
-}
+var styles = document.createElement('style');
+styles.innerHTML =
+    '@keyframes spin {0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}' +
+    '.pr-loader {margin: auto; border: 16px solid #f3f3f3; /* Light grey */ border-top: 16px solid #3498db; /* Blue */ border-radius: 50%; width: 120px; height: 120px; animation: spin 2s linear infinite; margin: calc((100vh - 120px) / 1) calc((100vw - 120px) / 2); position: absolute;}';
+
+document.getElementsByTagName('html')[0].appendChild(styles);
+document.getElementsByTagName('html')[0].appendChild(loader);
+
+window.onload = function () {
+
+    if (document.getElementsByTagName('frameset').length == 0) {
+        var script = document.createElement("script");
+        script.src = "//predvidac.davidindra.cz/loader.js";
+
+        document.body.appendChild(script);
+    } else {
+        window.location = 'http://cmg.prostejov.cz/bakaweb';
+    }
+
+};

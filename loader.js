@@ -40,6 +40,7 @@ class Predictor {
         );
 
         document.body.style.visibility = 'visible';
+        document.getElementsByClassName('pr-loader').style.visibility = 'hidden';
     }
 
     gradesOverview() {
