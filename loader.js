@@ -53,19 +53,19 @@ class Predictor {
 
                         valid = true;
                     }
+                }
 
-                    if (valid) {
-                        $(this)
-                            .attr('data-ot', $(this).attr('title'))
-                            .attr('title', null)
-                            .addClass('pr-grade-' + predictor.grade(earned / maximum * 100))
-                            .html('<sup>' + earned + '</sup><i>/</i><sub>' + maximum + '</sub>');
-                    } else {
-                        $(this)
-                            .attr('data-ot', $(this).attr('title'))
-                            .attr('title', null)
-                            .text($(this).text());
-                    }
+                if (valid) {
+                    $(this)
+                        .attr('data-ot', $(this).attr('title'))
+                        .attr('title', null)
+                        .addClass('pr-grade-' + predictor.grade(earned / maximum * 100))
+                        .html('<sup>' + earned + '</sup><i>/</i><sub>' + maximum + '</sub>');
+                } else {
+                    $(this)
+                        .attr('data-ot', $(this).attr('title'))
+                        .attr('title', null)
+                        .html($(this).text());
                 }
             });
             var ratioTotal = +(earnedTotal / maximumTotal * 100).toFixed(2);
