@@ -64,7 +64,7 @@ class Predictor {
                         $(this)
                             .attr('data-ot', $(this).attr('title'))
                             .attr('title', null)
-                            .html($(this).text());
+                            .text($(this).text());
                     }
                 }
             });
