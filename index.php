@@ -41,6 +41,8 @@
 
         button {
             border: 0;
+            margin: .5em 0;
+            padding: 0;
             background-color: transparent;
             cursor: pointer;
             font-size: 1.2em;
