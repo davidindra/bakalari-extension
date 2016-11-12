@@ -58,9 +58,9 @@ class Predictor {
                 ratio: ratioTotal
             });
 
-            $(this).find('td.predm:nth-child(4) > table > tbody > tr').prepend(
+            /*$(this).find('td.predm:nth-child(4) > table > tbody > tr').prepend(
                 '<td>' + earnedTotal + '/' + maximumTotal + '</td>'
-            );
+            );*/
 
             $(this).find('td.predm:nth-child(2)')
                 .attr('title', null)
