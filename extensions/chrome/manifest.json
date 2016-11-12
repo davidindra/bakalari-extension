@@ -5,7 +5,7 @@
   "description": "Doplněk pro Bakaláře, který přidává skvělé funkce, jakými je například předvídání známek.",
   "homepage_url": "https://predvidac.davidindra.cz",
   "author": "David Indra",
-  "version": "1.0.1",
+  "version": "1.0.2",
 
   "content_scripts": [
     {
