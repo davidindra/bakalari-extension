@@ -36,7 +36,7 @@ class Predictor {
         );
 
         $('body').append(
-            '<img id="pr-logo"' + !active ? ' class="grayscale"' : '' + '" src="//predvidac.davidindra.cz/icon-48.png" data-ot="Bakaláři 2<br>&copy; David Indra">'
+            '<img id="pr-logo"' + (!active ? ' class="grayscale"' : '') + '" src="//predvidac.davidindra.cz/icon-48.png" data-ot="Bakaláři 2<br>&copy; David Indra">'
         );
     }
 
