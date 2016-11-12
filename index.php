@@ -65,11 +65,11 @@
 
         a {
             color: inherit;
-            text-decoration: none;
+            text-decoration: underline;
         }
 
         a:hover {
-            font-weight: bold;
+            text-decoration: none;
         }
     </style>
 </head>
