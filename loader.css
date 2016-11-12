@@ -50,4 +50,10 @@ img#pr-logo {
   margin-top: 30pt;
   margin-left: 0; }
 
+.detznamka, .znnovejsi {
+  font-weight: normal; }
+
+.detznamka sup {
+  font-weight: bold; }
+
 /*# sourceMappingURL=loader.css.map */

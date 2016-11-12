@@ -58,6 +58,7 @@ class Predictor {
                         $(this)
                             .attr('data-ot', $(this).attr('title'))
                             .attr('title', null)
+                            .addClass('pr-grade-' + predictor.grade(earned / maximum * 100))
                             .html('<sup>' + earned + '</sup><i>/</i><sub>' + maximum + '</sub>');
                     } else {
                         $(this)
