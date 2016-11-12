@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/favicon.ico">
 
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext' rel='stylesheet'
+          type='text/css'>
 
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/fflhnljkmpbpddagaeieamffbkabpoig">
 </head>
@@ -19,14 +20,59 @@
     }
 </style>
 
-<br>
+<body style="
+    cursor:  default;
+">
 
-<button onclick="chrome.webstore.install()" id="install-button">Přidat do Chrome</button>
-<script>
-    /*if (chrome.app.isInstalled) {
-     document.getElementById('install-button').style.display = 'none';
-     }*/
-</script>
+<style type="text/css">
+    body {
+        font-family: 'Open Sans';
+        font-size: 15px;
+    }
+
+    div.container {
+        text-align: center;
+        width: 60%;
+        margin: 30vh auto 0;
+    }
+
+    img {
+        width: 48px;
+        height: 48px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    div.text {
+        margin-bottom: 1em;
+    }
+</style>
+
+
+<div class="container">
+    <img src="/icon-48.png">
+
+    <h1>
+        Předvídač známek
+    </h1>
+
+    <div class="text">
+        <b>Předvídač</b> prošel velkými změnami k lepšímu. Odteď stačí pouze <b>nainstalovat rozšíření</b> pro prohlížeč
+        Chrome (jiné nejsou a nebudou podporovány), které předvídač (a další nové funkce) automaticky doplní do
+        Bakalářů.<br>
+        V případě nefunkčnosti se na mne obraťte ;)
+    </div>
+
+    <button onclick="chrome.webstore.install()" id="install-button">Přidat do Chrome</button>
+
+    <script>
+        if (chrome.app.isInstalled) {
+            document.getElementById('install-button').disabled = true;
+        }
+    </script>
+</div>
 
 </body>
 </html>
