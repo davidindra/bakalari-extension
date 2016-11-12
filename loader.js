@@ -56,7 +56,7 @@ class Predictor {
             $(this).data('predictor', {
                 earned: earnedTotal,
                 maximum: maximumTotal,
-                ratio: maximumTotal == 0 ? 0 : ratioTotal
+                ratio: ratioTotal
             });
 
             /*$(this).find('td.predm:nth-child(4) > table > tbody > tr').prepend(
