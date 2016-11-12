@@ -36,7 +36,7 @@ class Predictor {
 
     finishSetup(active = false) {
         $('body').append(
-            '<img style="display: none;" id="pr-logo"' + (!active ? ' class="grayscale"' : '') + '" src="//predvidac.davidindra.cz/icon-48.png" data-ot="<b>Bakaláři 2</b> ' + (active ? 'aktivní' : 'neaktivní') + '<br>&copy; David Indra">'
+            '<img style="visibility: hidden;" id="pr-logo"' + (!active ? ' class="grayscale"' : '') + '" src="//predvidac.davidindra.cz/icon-48.png" data-ot="<b>Bakaláři 2</b> ' + (active ? 'aktivní' : 'neaktivní') + '<br>&copy; David Indra">'
         );
     }
 
