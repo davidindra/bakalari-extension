@@ -33,8 +33,9 @@ class Predictor {
             '<link type="text/css" href="//predvidac.davidindra.cz/opentip.css" rel="stylesheet">' +
             '<script type="text/javascript" src="//predvidac.davidindra.cz/opentip-jquery.min.js"></script>'
         );
+
         $('body').append(
-            '<img id="pr-logo" src="//predvidac.davidindra.cz/icon-128.png" title="Bakaláři 2">'
+            '<img id="pr-logo" src="//predvidac.davidindra.cz/icon-48.png" data-ot="Bakaláři 2">'
         );
     }
 
