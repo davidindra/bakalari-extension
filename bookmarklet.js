@@ -2,7 +2,7 @@ if (!predictorInjected) {
     if (document.getElementsByTagName('frameset').length == 0) {
         var head = document.head;
     } else {
-        var node = parent.frames[1].document.head;
+        var head = parent.frames[1].document.head;
     }
 
     var script = document.createElement("script");
