@@ -20,9 +20,9 @@ class Predictor {
         );
 
         var usertype = $('div.globlogjmeno > table > tbody > tr:nth-child(1) > td:nth-child(2)').text();
-        if (usertype != 'žák' && usertype != 'rodič') {
+        /*if (usertype != 'žák' && usertype != 'rodič') {
             throw new Error('Unsupported user type.');
-        }
+        }*/
 
         if ($('#cphmain_Panelprub').length) {
             predictor.gradesOverview();
