@@ -66,7 +66,7 @@ class Predictor {
             $(this).find('td.predm:nth-child(2)')
                 .attr('title', null)
                 .html(
-                '<div data-ot="' + earnedTotal + ' / ' + maximumTotal + '" class="detprumerdiv pr-grade-' + predictor.grade(ratioTotal) + '">' + maximumTotal == 0 ? '- ' : ratioTotal + '%</div>'
+                '<div data-ot="' + earnedTotal + ' / ' + maximumTotal + '" class="detprumerdiv pr-grade-' + predictor.grade(ratioTotal) + '">' + (maximumTotal == 0 ? '-' : (ratioTotal + '%')) + '</div>'
             );
 
             //$(this).addClass('pr-grade-bg-' + predictor.grade(ratioTotal));
