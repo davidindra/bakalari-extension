@@ -40,7 +40,8 @@ img#pr-logo {
   background-color: #FF1D0D !important; }
 
 #cphmain_roundprub, .radekznamky {
-  width: 100%; }
+  width: 100%;
+  cursor: default; }
 
 .outround {
   margin-top: 30pt;
