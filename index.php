@@ -32,11 +32,11 @@
 
         h1 {
             font-size: 2em;
-            margin: 1em 0;
+            margin: 1em 0 .5em;
         }
 
         div.text {
-            margin-bottom: 1em;
+            margin: 1em 0;
         }
 
         button {
