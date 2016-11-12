@@ -80,9 +80,9 @@ form#formbaka {
 
 div.pr-users {
   overflow-y: scroll;
-  height: 88vh;
-  top: 50px;
-  right: 0;
+  height: calc(100vh - 53px);
+  bottom: 10px;
+  right: 3px;
   position: fixed;
 }
 
