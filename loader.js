@@ -52,11 +52,11 @@ class Predictor {
                     }
                 }
             });
-            var ratioTotal = maximumTotal == 0 ? 0 : +(earnedTotal / maximumTotal * 100).toFixed(2);
+            var ratioTotal = +(earnedTotal / maximumTotal * 100).toFixed(2);
             $(this).data('predictor', {
                 earned: earnedTotal,
                 maximum: maximumTotal,
-                ratio: ratioTotal
+                ratio: maximumTotal == 0 ? 0 : ratioTotal
             });
 
             /*$(this).find('td.predm:nth-child(4) > table > tbody > tr').prepend(
@@ -66,7 +66,7 @@ class Predictor {
             $(this).find('td.predm:nth-child(2)')
                 .attr('title', null)
                 .html(
-                '<div data-ot="' + earnedTotal + ' / ' + maximumTotal + '" class="detprumerdiv pr-grade-' + predictor.grade(ratioTotal) + '">' + ratioTotal + '%</div>'
+                '<div data-ot="' + earnedTotal + ' / ' + maximumTotal + '" class="detprumerdiv pr-grade-' + predictor.grade(ratioTotal) + '">' + maximumTotal == 0 ? '- ' : ratioTotal + '%</div>'
             );
 
             //$(this).addClass('pr-grade-bg-' + predictor.grade(ratioTotal));
