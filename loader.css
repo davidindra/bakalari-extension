@@ -3,5 +3,24 @@ img#pr-logo {
   height: 30px;
   position: fixed;
   bottom: 10px;
-  right: 10px;
-}
+  right: 10px; }
+
+.radekznamky td {
+  vertical-align: middle; }
+
+.pr-grade-1 {
+  color: #00C91D !important; }
+
+.pr-grade-2 {
+  color: #B7E807 !important; }
+
+.pr-grade-3 {
+  color: #FFC800 !important; }
+
+.pr-grade-4 {
+  color: #E8730C !important; }
+
+.pr-grade-5 {
+  color: #FF1D0D !important; }
+
+/*# sourceMappingURL=loader.css.map */

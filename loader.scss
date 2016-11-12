@@ -1,0 +1,25 @@
+img#pr-logo {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.radekznamky td {
+  vertical-align: middle;
+}
+
+$grade-colors: (
+    1: #00C91D,
+    2: #B7E807,
+    3: #FFC800,
+    4: #E8730C,
+    5: #FF1D0D
+);
+
+@each $grade, $color in $grade-colors {
+  .pr-grade-#{$grade} {
+    color: $color !important;
+  }
+}
