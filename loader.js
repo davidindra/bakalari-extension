@@ -61,7 +61,7 @@ class Predictor {
             );
 
             $(this).find('td.predm:nth-child(2)').html(
-                '<div class="detprumerdiv pr-grade-' + this.grade(ratioTotal) + '">' + ratioTotal + '%</div>'
+                '<div class="detprumerdiv pr-grade-' + predictor.grade(ratioTotal) + '">' + ratioTotal + '%</div>'
             );
         });
     }
