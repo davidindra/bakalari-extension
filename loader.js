@@ -38,6 +38,8 @@ class Predictor {
         $('body').append(
             '<img style="visibility: hidden;" id="pr-logo"' + (!active ? ' class="grayscale"' : '') + '" src="//predvidac.davidindra.cz/icon-48.png" data-ot="<b>Bakaláři 2</b> ' + (active ? 'aktivní' : 'neaktivní') + '<br>&copy; David Indra">'
         );
+
+        document.body.style.visibility = true;
     }
 
     gradesOverview() {
