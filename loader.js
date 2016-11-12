@@ -13,6 +13,12 @@ class Predictor {
         this.doc = $(this.doc);
         console.log('Predictor 0.1');
 
+        $('head').append(
+            '<link type="text/css" href="//predvidac.davidindra.cz/loader.css" rel="stylesheet">' +
+            '<link type="text/css" href="//predvidac.davidindra.cz/opentip.css" rel="stylesheet">' +
+            '<script type="text/javascript" src="//predvidac.davidindra.cz/opentip-jquery.min.js"></script>'
+        );
+
         var usertype = $('div.globlogjmeno > table > tbody > tr:nth-child(1) > td:nth-child(2)').text();
         if (usertype != 'žák' && usertype != 'rodič') {
             throw new Error('Unsupported user type.');
@@ -29,12 +35,6 @@ class Predictor {
     }
 
     finishSetup(active = false) {
-        $('head').append(
-            '<link type="text/css" href="//predvidac.davidindra.cz/loader.css" rel="stylesheet">' +
-            '<link type="text/css" href="//predvidac.davidindra.cz/opentip.css" rel="stylesheet">' +
-            '<script type="text/javascript" src="//predvidac.davidindra.cz/opentip-jquery.min.js"></script>'
-        );
-
         $('body').append(
             '<img id="pr-logo"' + (!active ? ' class="grayscale"' : '') + '" src="//predvidac.davidindra.cz/icon-48.png" data-ot="<b>Bakaláři 2</b> ' + (active ? 'aktivní' : 'neaktivní') + '<br>&copy; David Indra">'
         );
