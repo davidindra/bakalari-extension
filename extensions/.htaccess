@@ -1,4 +1,4 @@
 <FilesMatch "chrome.crx">
-Header set Content-type "application/x-chrome-extension; charset=utf-8"
+Header set Content-type "application/x-chrome-extension"
 Header set X-Content-Type-Options ""
 </FilesMatch>
