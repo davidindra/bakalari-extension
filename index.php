@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/favicon.ico">
 
+    <meta property="og:url"                content="https://predvidac.davidindra.cz" />
+    <meta property="og:type"               content="product" />
+    <meta property="og:locale"               content="cs_cz" />
+    <meta property="og:title"              content="Předvídač známek" />
+    <meta property="og:description"        content="Doplněk pro Bakaláře, který přidává skvělé funkce, jakými je například předvídání známek." />
+    <meta property="og:image"              content="//predvidac.davidindra.cz/opengraph.png" />
+
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext' rel='stylesheet'
           type='text/css'>
 
