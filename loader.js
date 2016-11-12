@@ -29,7 +29,9 @@ class Predictor {
 
     finishSetup(){
         $('head').append(
-            '<link type="text/css" href="//predvidac.davidindra.cz/loader.css" rel="stylesheet">'
+            '<link type="text/css" href="//predvidac.davidindra.cz/loader.css" rel="stylesheet">' +
+            '<link type="text/css" href="//predvidac.davidindra.cz/opentip.css" rel="stylesheet">' +
+            '<script type="text/javascript" src="//predvidac.davidindra.cz/opentip-jquery.min.js"></script>'
         );
         $('body').append(
             '<img id="pr-logo" src="//predvidac.davidindra.cz/icon-128.png" title="Bakaláři 2">'
@@ -61,7 +63,7 @@ class Predictor {
             );
 
             $(this).find('td.predm:nth-child(2)').html(
-                '<div class="detprumerdiv pr-grade-' + predictor.grade(ratioTotal) + '">' + ratioTotal + '%</div>'
+                '<div data-ot="' + earnedTotal + ' / ' + maximumTotal + '" class="detprumerdiv pr-grade-' + predictor.grade(ratioTotal) + '">' + ratioTotal + '%</div>'
             );
 
             //$(this).addClass('pr-grade-bg-' + predictor.grade(ratioTotal));
