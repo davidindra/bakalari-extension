@@ -51,7 +51,8 @@ img#pr-logo {
   margin-left: 0; }
 
 .detznamka, .znnovejsi {
-  font-weight: normal; }
+  font-weight: normal;
+  font-size: inherit; }
 
 .detznamka {
   font-size: 16px; }
