@@ -1,10 +1,10 @@
 console.log('Predictor extension triggered.');
 
-document.getElementsByTagName("html")[0].style.display = 'none';
+document.getElementsByTagName("html")[0].style.visibility = 'hidden';
 
 var loader = document.createElement('div');
 loader.className = 'pr-loader';
-loader.style.display = 'block';
+loader.style.visibility = 'visible';
 
 var styles = document.createElement('style');
 styles.innerHTML =
