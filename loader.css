@@ -42,6 +42,9 @@ img#pr-logo {
 .pr-grade-bg-5 {
   background-color: #FF1D0D !important; }
 
+.smaller {
+  font-size: smaller; }
+
 #cphmain_roundprub_RPC {
   background-color: white !important; }
 
