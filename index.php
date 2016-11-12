@@ -58,6 +58,10 @@
         button span {
             vertical-align: middle;
         }
+
+        button span:hover {
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
