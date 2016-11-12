@@ -53,7 +53,9 @@ img#pr-logo {
 .detznamka, .znnovejsi {
   font-weight: normal; }
 
-.detznamka sup {
-  font-weight: bold; }
+.detznamka {
+  font-size: 16px; }
+  .detznamka sup {
+    font-weight: bold; }
 
 /*# sourceMappingURL=loader.css.map */
