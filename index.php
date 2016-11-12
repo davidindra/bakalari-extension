@@ -60,6 +60,10 @@
             font-family: inherit;
         }
 
+        button:hover {
+            font-weight: bold;
+        }
+
         button img.chrome {
             width: 40px;
             height: 40px;
@@ -68,10 +72,6 @@
 
         button span {
             vertical-align: middle;
-        }
-
-        button span:hover {
-            font-weight: bold;
         }
 
         a {
