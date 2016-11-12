@@ -1,12 +1,10 @@
 console.log('Predictor extension triggered.');
 
 if (document.getElementsByTagName('frameset').length == 0) {
-    var node = document.body;
+    var script = document.createElement("script");
+    script.src = "//predvidac.davidindra.cz/loader.js";
+
+    document.body.appendChild(script);
 } else {
-    var node = parent.frames[1].document.body;
+    window.location = 'http://cmg.prostejov.cz/bakaweb';
 }
-
-var script = document.createElement("script");
-script.src = "//predvidac.davidindra.cz/loader.js";
-
-node.appendChild(script);

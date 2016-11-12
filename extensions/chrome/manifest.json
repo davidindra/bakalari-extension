@@ -10,10 +10,8 @@
   "content_scripts": [
     {
       "matches": [
-        "http://cmg.prostejov.cz/*",
-        "https://cmg.prostejov.cz/*",
-        "http://*.cmgpv.cz/*",
-        "https://*.cmgpv.cz/*"
+        "*://cmg.prostejov.cz/*",
+        "*://*.cmgpv.cz/*"
       ],
       "js": [
         "onPageLoad.js"
@@ -37,7 +35,7 @@
   },
 
   "permissions": [
-    "tabs",
+
     "storage"
   ]
 }
