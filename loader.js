@@ -27,7 +27,7 @@ class Predictor {
         predictor.finishSetup();
     }
 
-    finishSetup() {
+    finishSetup(){
         $('body').append(
             '<img src="//predvidac.davidindra.cz/icon-128.png" style="width: 30px; height: 30px; position: fixed; bottom: 10px; right: 10px;">'
         );
@@ -62,20 +62,16 @@ class Predictor {
     }
 }
 
-var predictor, predictorLaunched;
-
-$(document).ready(function () {
-    if (!predictorLaunched) {
-        if (document.getElementsByTagName('frameset').length == 0) {
-            var doc = document;
-        } else {
-            var doc = parent.frames[1].document;
-        }
-
-        predictor = new Predictor(doc);
-
-        predictorLaunched = true;
+if (!predictorLaunched) {
+    if (document.getElementsByTagName('frameset').length == 0) {
+        var doc = document;
     } else {
-        throw new Error("Predictor already launched.");
+        var doc = parent.frames[1].document;
     }
-});
+
+    var predictor = new Predictor(doc);
+
+    var predictorLaunched = true;
+} else {
+    throw new Error("Predictor already launched.");
+}
