@@ -24,7 +24,7 @@
             margin: 18vh auto 0;
         }
 
-        img {
+        img.logo {
             width: 48px;
             height: 48px;
             border: none;
@@ -37,6 +37,23 @@
 
         div.text {
             margin-bottom: 1em;
+        }
+
+        button {
+            border: 0;
+            background-color: transparent;
+            cursor: pointer;
+            font-size: 1.2em;
+            font-family: inherit;
+        }
+
+        button img.chrome {
+            width: 40px;
+            height: 40px;
+        }
+
+        button span {
+
         }
     </style>
 </head>
@@ -52,13 +69,14 @@
     <div class="text">
         <b>Předvídač</b> prošel velkými změnami k lepšímu. Odteď stačí pouze <b>nainstalovat rozšíření</b> pro prohlížeč
         Chrome (jiné nejsou a nebudou podporovány), které předvídač (a další nové funkce) automaticky doplní do
-        Bakalářů.<br>
-        V případě nefunkčnosti se na mne obraťte ;)
+        Bakalářů.
     </div>
 
     <button onclick="chrome.webstore.install()" id="install-button">
         <img src="/chrome.png">
-        Přidat do Chrome
+        <span>
+            Přidat do Chrome
+        </span>
     </button>
 
     <script>
@@ -66,6 +84,10 @@
             document.getElementById('install-button').disabled = true;
         }
     </script>
+
+    <div class="text">
+        V případě nefunkčnosti se na mne obraťte ;)
+    </div>
 </div>
 
 </body>
