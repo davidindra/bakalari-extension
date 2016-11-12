@@ -33,16 +33,18 @@
     div.container {
         text-align: center;
         width: 60%;
-        margin: 30vh auto 0;
+        margin: 18vh auto 0;
     }
 
     img {
         width: 48px;
         height: 48px;
+        border: none;
     }
 
     h1 {
         font-size: 2em;
+        margin: 1em 0;
     }
 
     div.text {
