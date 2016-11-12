@@ -28,6 +28,9 @@ class Predictor {
     }
 
     finishSetup(){
+        $('head').append(
+            '<link type="text/css" href="//predvidac.davidindra.cz/loader.css" rel="stylesheet">'
+        );
         $('body').append(
             '<img src="//predvidac.davidindra.cz/icon-128.png" style="width: 30px; height: 30px; position: fixed; bottom: 10px; right: 10px;">'
         );
