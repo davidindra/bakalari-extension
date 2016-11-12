@@ -52,7 +52,7 @@ class Predictor {
                     }
                 }
             });
-            var ratioTotal = +(earnedTotal / maximumTotal * 100).toFixed(2);
+            var ratioTotal = maximumTotal == 0 ? 0 : +(earnedTotal / maximumTotal * 100).toFixed(2);
             $(this).data('predictor', {
                 earned: earnedTotal,
                 maximum: maximumTotal,
