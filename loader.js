@@ -41,9 +41,9 @@ class Predictor {
     }
 
     gradesOverview() {
-        $('#cphmain_roundprub_RPC > div > div > table > tbody > tr.detznamka').each(function () {
+        $('#cphmain_roundprub_RPC > div > div > table > tbody > tr').each(function () {
             var earnedTotal = 0, maximumTotal = 0;
-            $(this).find('td.predm:nth-child(4) > table > tbody > tr > td').each(function () {
+            $(this).find('td.predm:nth-child(4) > table > tbody > tr.detznamka > td').each(function () {
                 if ($(this).text().length > 5) {
                     var earned = parseInt($(this).text().split(' ')[0]);
                     var maximum = parseInt($(this).text().split(' ')[1].split('max')[1].split('b')[0]);
