@@ -13,12 +13,6 @@ class Predictor {
         this.doc = $(this.doc);
         console.log('Predictor 0.1');
 
-        $(document).ready(function(){
-            $('body').append(
-                '<img src="//predvidac.davidindra.cz/icon-128.png" style="width: 30px; height: 30px; position: fixed; bottom: 10px; right: 10px;">'
-            );
-        });
-
         var usertype = $('div.globlogjmeno > table > tbody > tr:nth-child(1) > td:nth-child(2)').text();
         if (usertype != 'žák' && usertype != 'rodič') {
             throw new Error('Unsupported user type.');
@@ -29,6 +23,14 @@ class Predictor {
         } else {
             throw new Error('Unsupported page.');
         }
+
+        predictor.finishSetup();
+    }
+
+    finishSetup(){
+        $('body').append(
+            '<img src="//predvidac.davidindra.cz/icon-128.png" style="width: 30px; height: 30px; position: fixed; bottom: 10px; right: 10px;">'
+        );
     }
 
     gradesOverview() {
