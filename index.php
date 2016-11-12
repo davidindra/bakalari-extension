@@ -10,48 +10,37 @@
           type='text/css'>
 
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/fflhnljkmpbpddagaeieamffbkabpoig">
+
+    <style type="text/css">
+        body {
+            font-family: 'Open Sans';
+            font-size: 15px;
+            cursor: default;
+        }
+
+        div.container {
+            text-align: center;
+            width: 60%;
+            margin: 18vh auto 0;
+        }
+
+        img {
+            width: 48px;
+            height: 48px;
+            border: none;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: 1em 0;
+        }
+
+        div.text {
+            margin-bottom: 1em;
+        }
+    </style>
 </head>
 <body>
-
-<style type="text/css">
-    body {
-        font-family: 'Open Sans';
-        font-size: 15px;
-    }
-</style>
-
-<body style="
-    cursor:  default;
-">
-
-<style type="text/css">
-    body {
-        font-family: 'Open Sans';
-        font-size: 15px;
-    }
-
-    div.container {
-        text-align: center;
-        width: 60%;
-        margin: 18vh auto 0;
-    }
-
-    img {
-        width: 48px;
-        height: 48px;
-        border: none;
-    }
-
-    h1 {
-        font-size: 2em;
-        margin: 1em 0;
-    }
-
-    div.text {
-        margin-bottom: 1em;
-    }
-</style>
-
 
 <div class="container">
     <img src="/icon-48.png">
