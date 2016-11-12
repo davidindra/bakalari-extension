@@ -32,7 +32,7 @@ class Predictor {
             '<link type="text/css" href="//predvidac.davidindra.cz/loader.css" rel="stylesheet">'
         );
         $('body').append(
-            '<img id="pr-logo" src="//predvidac.davidindra.cz/icon-128.png">'
+            '<img id="pr-logo" src="//predvidac.davidindra.cz/icon-128.png" title="Bakaláři 2">'
         );
     }
 
