@@ -27,7 +27,7 @@ class Predictor {
         predictor.finishSetup();
     }
 
-    finishSetup(){
+    finishSetup() {
         $('head').append(
             '<link type="text/css" href="//predvidac.davidindra.cz/loader.css" rel="stylesheet">' +
             '<link type="text/css" href="//predvidac.davidindra.cz/opentip.css" rel="stylesheet">' +
@@ -46,9 +46,24 @@ class Predictor {
                 if ($(this).text().length > 5) {
                     var earned = parseInt($(this).text().split(' ')[0]);
                     var maximum = parseInt($(this).text().split(' ')[1].split('max')[1].split('b')[0]);
+                    var valid = false;
                     if (typeof earned == 'number' && typeof maximum == 'number') {
                         earnedTotal += earned;
                         maximumTotal += maximum;
+
+                        valid = true;
+                    }
+
+                    if (valid) {
+                        $(this)
+                            .attr('data-ot', $(this).title)
+                            .attr('title', null)
+                            .html("<sup>$(earned)</sup><i>/</i><sub>$(maximum)</sub>");
+                    } else {
+                        $(this)
+                            .attr('data-ot', $(this).title)
+                            .attr('title', null)
+                            .html($(this).text());
                     }
                 }
             });
@@ -60,25 +75,25 @@ class Predictor {
             });
 
             /*$(this).find('td.predm:nth-child(4) > table > tbody > tr').prepend(
-                '<td>' + earnedTotal + '/' + maximumTotal + '</td>'
-            );*/
+             '<td>' + earnedTotal + '/' + maximumTotal + '</td>'
+             );*/
 
             $(this).find('td.predm:nth-child(2)')
                 .attr('title', null)
                 .html(
-                '<div data-ot="' + earnedTotal + ' / ' + maximumTotal + '" class="detprumerdiv pr-grade-' + predictor.grade(ratioTotal) + '">' + (maximumTotal == 0 ? '-' : (ratioTotal + '%')) + '</div>'
-            );
+                    '<div data-ot="' + earnedTotal + ' / ' + maximumTotal + '" class="detprumerdiv pr-grade-' + predictor.grade(ratioTotal) + '">' + (maximumTotal == 0 ? '-' : (ratioTotal + '%')) + '</div>'
+                );
 
             //$(this).addClass('pr-grade-bg-' + predictor.grade(ratioTotal));
         });
     }
 
     grade(percent) {
-        if(percent >= 89.5) return 1;
-        if(percent >= 74.5) return 2;
-        if(percent >= 54.5) return 3;
-        if(percent >= 39.5) return 4;
-        if(percent >= 0) return 5;
+        if (percent >= 89.5) return 1;
+        if (percent >= 74.5) return 2;
+        if (percent >= 54.5) return 3;
+        if (percent >= 39.5) return 4;
+        if (percent >= 0) return 5;
     }
 }
 
