@@ -5,22 +5,45 @@ img#pr-logo {
   bottom: 10px;
   right: 10px; }
 
+/* GRADES OVERVIEW */
 .radekznamky td {
   vertical-align: middle; }
 
 .pr-grade-1 {
+  color: #00C91D !important; }
+
+.pr-grade-bg-1 {
   background-color: #00C91D !important; }
 
 .pr-grade-2 {
+  color: #B7E807 !important; }
+
+.pr-grade-bg-2 {
   background-color: #B7E807 !important; }
 
 .pr-grade-3 {
+  color: #FFC800 !important; }
+
+.pr-grade-bg-3 {
   background-color: #FFC800 !important; }
 
 .pr-grade-4 {
+  color: #E8730C !important; }
+
+.pr-grade-bg-4 {
   background-color: #E8730C !important; }
 
 .pr-grade-5 {
+  color: #FF1D0D !important; }
+
+.pr-grade-bg-5 {
   background-color: #FF1D0D !important; }
+
+#cphmain_roundprub, .radekznamky {
+  width: 100%; }
+
+.outround {
+  margin-top: 30pt;
+  margin-left: 0; }
 
 /*# sourceMappingURL=loader.css.map */

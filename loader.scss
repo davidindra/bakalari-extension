@@ -6,10 +6,14 @@ img#pr-logo {
   right: 10px;
 }
 
+/* GRADES OVERVIEW */
+
+// align texts to vertical middle
 .radekznamky td {
   vertical-align: middle;
 }
 
+// different grades coloring
 $grade-colors: (
     1: #00C91D,
     2: #B7E807,
@@ -20,6 +24,21 @@ $grade-colors: (
 
 @each $grade, $color in $grade-colors {
   .pr-grade-#{$grade} {
+    color: $color !important;
+  }
+
+  .pr-grade-bg-#{$grade} {
     background-color: $color !important;
   }
+}
+
+// 100% main table width
+#cphmain_roundprub, .radekznamky {
+  width: 100%;
+}
+
+// fix top margin
+.outround {
+  margin-top: 30pt;
+  margin-left: 0;
 }

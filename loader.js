@@ -61,10 +61,10 @@ class Predictor {
             );
 
             $(this).find('td.predm:nth-child(2)').html(
-                '<div class="detprumerdiv disable-pr-grade-' + predictor.grade(ratioTotal) + '">' + ratioTotal + '%</div>'
+                '<div class="detprumerdiv pr-grade-' + predictor.grade(ratioTotal) + '">' + ratioTotal + '%</div>'
             );
 
-            $(this).addClass('pr-grade-' + predictor.grade(ratioTotal));
+            //$(this).addClass('pr-grade-bg-' + predictor.grade(ratioTotal));
         });
     }
 
