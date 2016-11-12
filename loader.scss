@@ -79,8 +79,10 @@ form#formbaka {
 }
 
 div.pr-users {
+  overflow: scroll;
+  height: 88vh;
+  top: 50px;
   right: 0;
-  top: 40px;
   position: absolute;
 }
 
