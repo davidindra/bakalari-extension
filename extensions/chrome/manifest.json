@@ -5,8 +5,6 @@
   "author": "David Indra",
   "version": "1.0",
 
-  "update_url": "https://predvidac.davidindra.cz/extensions/chrome.xml",
-
   "content_scripts": [
     {
       "matches": [

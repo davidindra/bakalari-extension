@@ -1,5 +1,4 @@
 <FilesMatch "chrome.crx">
 Header set Content-type "application/x-chrome-extension"
-Header set Content-type "application/octet-stream"
 Header set X-Content-Type-Options ""
 </FilesMatch>
