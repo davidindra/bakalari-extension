@@ -52,10 +52,11 @@
         button img.chrome {
             width: 40px;
             height: 40px;
+            vertical-align: middle;
         }
 
         button span {
-
+            vertical-align: middle;
         }
     </style>
 </head>
