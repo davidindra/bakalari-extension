@@ -62,6 +62,15 @@
         button span:hover {
             font-weight: bold;
         }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:hover {
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -93,7 +102,7 @@
     </script>
 
     <div class="text">
-        V případě nefunkčnosti se na mne obraťte ;)
+        V případě nefunkčnosti se na <a href="//davidindra.cz" target="_blank">mne</a> obraťte ;)
     </div>
 </div>
 
