@@ -65,4 +65,15 @@ img#pr-logo {
   .detznamka sup {
     font-weight: bold; }
 
+form#formbaka {
+  margin-right: 110px; }
+
+div.pr-users {
+  right: 0;
+  top: 40px;
+  position: absolute; }
+
+table.loglinktable {
+  border-spacing: 2px; }
+
 /*# sourceMappingURL=loader.css.map */
