@@ -64,7 +64,7 @@ class Predictor {
                 '<div class="detprumerdiv disable-pr-grade-' + predictor.grade(ratioTotal) + '">' + ratioTotal + '%</div>'
             );
 
-            $(this).class('pr-grade-' + predictor.grade(ratioTotal));
+            $(this).addClass('pr-grade-' + predictor.grade(ratioTotal));
         });
     }
 
