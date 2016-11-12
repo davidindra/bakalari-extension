@@ -56,7 +56,10 @@
         V případě nefunkčnosti se na mne obraťte ;)
     </div>
 
-    <button onclick="chrome.webstore.install()" id="install-button">Přidat do Chrome</button>
+    <button onclick="chrome.webstore.install()" id="install-button">
+        <img src="/chrome.png">
+        Přidat do Chrome
+    </button>
 
     <script>
         if (chrome.app.isInstalled) {
