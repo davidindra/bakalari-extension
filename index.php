@@ -60,7 +60,7 @@
 <body>
 
 <div class="container">
-    <img src="/icon-48.png">
+    <img class="logo" src="/icon-48.png">
 
     <h1>
         Předvídač známek
@@ -73,7 +73,7 @@
     </div>
 
     <button onclick="chrome.webstore.install()" id="install-button">
-        <img src="/chrome.png">
+        <img class="chrome" src="/chrome.png">
         <span>
             Přidat do Chrome
         </span>
