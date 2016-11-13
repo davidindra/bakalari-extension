@@ -40,7 +40,8 @@ class Predictor {
         );
 
         $('body').append(
-            '<div class="pr-users"></div>'
+            '<div class="pr-users"></div>' +
+            '<div class="color"></div>'
         );
 
         $('div.pr-users').load('/bakaweb/login.aspx?s=-202 table.loglinktable', function(){
