@@ -65,6 +65,9 @@ img#pr-logo {
   .detznamka sup {
     font-weight: bold; }
 
+.znnovejsi {
+  border: 1px dashed #ff0000; }
+
 form#formbaka {
   width: calc(100vw - 25ex - 30px);
   margin: 10px 0 0 10px; }
