@@ -16,12 +16,12 @@ styles.innerHTML =
 document.getElementsByTagName('html')[0].appendChild(styles);
 document.getElementsByTagName('html')[0].appendChild(loader);
 
-window.predictorLoaderShow = function(){
+var predictorLoaderShow = function(){
     document.getElementsByTagName('html')[0].style.visibility = 'hidden';
     document.getElementsByClassName('pr-loader')[0].style.display = 'block';
 }
 
-window.predictorLoaderHide = function(){
+var predictorLoaderHide = function(){
     document.getElementsByTagName('html')[0].style.visibility = 'visible';
     document.getElementsByClassName('pr-loader')[0].style.display = 'none';
 }
