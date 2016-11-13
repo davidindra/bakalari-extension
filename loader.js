@@ -95,10 +95,13 @@ class Predictor {
             $(this).find('td.predm:nth-child(2)')
                 .attr('title', null)
                 .html(
-                    '<div data-ot="' + earnedTotal + ' / ' + maximumTotal + '" class="detprumerdiv pr-grade-' + predictor.grade(ratioTotal) + '">' + (maximumTotal == 0 ? '-' : (ratioTotal + '% (' + predictor.grade(ratioTotal) + ')')) + '</div>'
-                );
+                    `<div data-ot="
+                    ${earnedTotal} / ${maximumTotal}<br>
 
-            //$(this).addClass('pr-grade-bg-' + predictor.grade(ratioTotal));
+                    " class="detprumerdiv pr-grade-${predictor.grade(ratioTotal)}">
+                    ${(maximumTotal == 0 ? '-' : (ratioTotal + '% (' + predictor.grade(ratioTotal) + ')'))}
+                    </div>`
+                );
         });
     }
 
@@ -108,6 +111,14 @@ class Predictor {
         if (percent >= 54.5) return 3;
         if (percent >= 39.5) return 4;
         if (percent >= 0) return 5;
+    }
+
+    neededPoints(earned, maximum, limit){
+        if(this.grade(limit) >= this.grade(earned / maximum * 100)) {
+            return Math.ceil(((limit * maximum) / 100 - earned) / (1 - (limit / 100)));
+        }else{
+            return Math.floor(((limit * maximum) / 100 - earned) / (1 - (limit / 100)));
+        }
     }
 }
 
