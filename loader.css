@@ -58,7 +58,7 @@ img#pr-logo {
   margin-left: 0; }
 
 div.advertout {
-  display: none; }
+  display: none !important; }
 
 div.pravemenu2 div {
   display: inline-block; }

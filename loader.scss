@@ -62,7 +62,7 @@ $grade-colors: (
 
 // remove advert
 div.advertout {
-  display: none;
+  display: none !important;
 }
 
 // fix right menu
