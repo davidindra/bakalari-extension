@@ -21,7 +21,7 @@ img#pr-logo {
 // different grades coloring
 $grade-colors: (
     1: #00C91D,
-    //2: #B7E807,
+  //2: #B7E807,
     2: #9bc600,
     3: #FFC800,
     4: #E8730C,
@@ -121,9 +121,10 @@ table.loglinktable {
 // color panel
 div.color {
   background-color: #ffce37;
-  height: 100vh;
+  height: calc(100vh - 20px);
   width: 30ex;
-  padding: 10px 0;
+  top: 10px;
+  margin-bottom: 10px;
   right: 3px;
   position: fixed;
 }

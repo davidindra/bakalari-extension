@@ -100,9 +100,10 @@ table.loglinktable {
 
 div.color {
   background-color: #ffce37;
-  height: 100vh;
+  height: calc(100vh - 20px);
   width: 30ex;
-  padding: 10px 0;
+  top: 10px;
+  margin-bottom: 10px;
   right: 3px;
   position: fixed; }
 
