@@ -57,6 +57,9 @@ img#pr-logo {
   margin-top: 40pt;
   margin-left: 0; }
 
+div.pravemenu2 * {
+  display: inline-block; }
+
 .detznamka, .znnovejsi {
   font-weight: normal;
   font-size: inherit; }

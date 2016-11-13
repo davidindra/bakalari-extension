@@ -60,6 +60,11 @@ $grade-colors: (
   margin-left: 0;
 }
 
+// fix right menu
+div.pravemenu2 * {
+  display: inline-block;
+}
+
 // fix font weight and size
 .detznamka, .znnovejsi {
   font-weight: normal;
