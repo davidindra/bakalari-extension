@@ -102,10 +102,10 @@ class Predictor {
                 .html(
                     `<div data-ot="
                     <!--${earnedTotal} / ${maximumTotal}<br>-->
-                    <span class='pr-grade-bg-1'>1</span>: ${g1[0] == 'more' ? g1[1] : '0'}/${g1[1]}<br>
-                    <span class='pr-grade-bg-2'>2</span>: ${g2[0] == 'more' ? g2[1] : '0'}/${g2[1]}<br>
-                    <span class='pr-grade-bg-3'>3</span>: ${g3[0] == 'more' ? g3[1] : '0'}/${g3[1]}<br>
-                    <span class='pr-grade-bg-4'>4</span>: ${g4[0] == 'more' ? g4[1] : '0'}/${g4[1]}
+                    <b class='pr-grade-bg-1'>1</b>: ${g1[0] == 'more' ? g1[1] : '0'}/${g1[1]}<br>
+                    <b class='pr-grade-bg-2'>2</b>: ${g2[0] == 'more' ? g2[1] : '0'}/${g2[1]}<br>
+                    <b class='pr-grade-bg-3'>3</b>: ${g3[0] == 'more' ? g3[1] : '0'}/${g3[1]}<br>
+                    <b class='pr-grade-bg-4'>4</b>: ${g4[0] == 'more' ? g4[1] : '0'}/${g4[1]}
                     " class="detprumerdiv pr-grade-${predictor.grade(ratioTotal)}">
                     ${(maximumTotal == 0 ? '-' : (ratioTotal + '% (' + predictor.grade(ratioTotal) + ')'))}
                     </div>`
