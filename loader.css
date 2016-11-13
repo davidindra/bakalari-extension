@@ -85,7 +85,8 @@ div.pr-users {
     font-weight: bold; }
 
 table.loglinktable {
-  border-spacing: 2px; }
+  border-spacing: 2px;
+  width: 100%; }
   table.loglinktable .loglink {
     padding: 2px;
     background-color: white;
