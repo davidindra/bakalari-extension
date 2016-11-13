@@ -75,7 +75,7 @@ $grade-colors: (
 
 // list of users
 form#formbaka {
-  width: calc(100vw - 190px);
+  width: calc(100vw - 170px);
 }
 
 #stranka {
@@ -83,9 +83,6 @@ form#formbaka {
 }
 
 div.pr-users {
-  overflow-y: scroll;
-  width: 170px;
-  height: calc(100vh - 53px);
   bottom: 10px;
   right: 3px;
   position: fixed;
@@ -96,5 +93,11 @@ table.loglinktable {
 
   .loglink {
     padding: 2px;
+    background-color: white;
+    text-align: right;
+
+    &:hover {
+      font-weight: bold;
+    }
   }
 }
