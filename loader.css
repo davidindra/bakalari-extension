@@ -98,7 +98,7 @@ table.loglinktable {
     table.loglinktable .loglink a:hover {
       font-weight: bold; }
 
-html {
-  background-color: #ffce37 !important; }
+html, body, #stranka {
+  background-color: #ffce37; }
 
 /*# sourceMappingURL=loader.css.map */
