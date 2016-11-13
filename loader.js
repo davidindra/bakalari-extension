@@ -48,12 +48,7 @@ class Predictor {
         });
 
         document.getElementsByTagName('html')[0].style.visibility = 'visible';
-        $('.pr-loader').hide();
-
-        $('a, a *, button').on('click', function() {
-            document.getElementsByTagName('html')[0].style.visibility = 'hidden';
-            $('.pr-loader').show();
-        });
+        document.getElementsByClassName('pr-loader')[0].hide();
     }
 
     gradesOverview() {
