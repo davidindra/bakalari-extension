@@ -101,7 +101,7 @@ class Predictor {
                 .attr('title', null)
                 .html(
                     `<div data-ot="
-                    ${earnedTotal} / ${maximumTotal}<br>
+                    <!--${earnedTotal} / ${maximumTotal}<br>-->
                     1: ${g1[0] == 'more' ? g1[1] : '0'}/${g1[1]}<br>
                     2: ${g2[0] == 'more' ? g2[1] : '0'}/${g2[1]}<br>
                     3: ${g3[0] == 'more' ? g3[1] : '0'}/${g3[1]}<br>
