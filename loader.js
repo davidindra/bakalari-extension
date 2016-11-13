@@ -50,7 +50,7 @@ class Predictor {
         document.getElementsByTagName('html')[0].style.visibility = 'visible';
         $('.pr-loader').hide();
 
-        $('a').on('click', function() {
+        $('a, button').on('click', function() {
             document.getElementsByTagName('html')[0].style.visibility = 'hidden';
             $('.pr-loader').show();
         });
