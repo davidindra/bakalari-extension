@@ -128,7 +128,7 @@ class Predictor {
             if(limit / 100 == earned / maximum){
                 return ['less', 0];
             }else {
-                return ['less', Math.ceil((100*earned - limit * maximum)/limit)];
+                return ['less', Math.floor((100*earned - limit * maximum)/limit)];
             }
         }
     }
