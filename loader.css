@@ -71,12 +71,11 @@ div.pravemenu2 div {
   font-size: 16px; }
   .detznamka sup {
     font-weight: bold; }
-
-sub {
-  transform: rotate(-60deg);
-  display: inline-block;
-  vertical-align: -1px;
-  margin-left: -3px; }
+  .detznamka sub {
+    transform: rotate(-60deg);
+    display: inline-block;
+    vertical-align: -1px;
+    margin-left: -3px; }
 
 .znnovejsi {
   border: 1px dotted #2d1010;
