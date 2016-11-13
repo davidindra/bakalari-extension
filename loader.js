@@ -47,8 +47,10 @@ class Predictor {
             $('div.pr-users table.loglinktable').prepend('<div class="heading">Spojené účty</div>');
         });
 
-        document.getElementsByTagName('html')[0].style.visibility = 'visible';
-        document.getElementsByClassName('pr-loader')[0].remove();
+        /*document.getElementsByTagName('html')[0].style.visibility = 'visible';
+        document.getElementsByClassName('pr-loader')[0].remove();*/
+
+        predictorLoaderHide();
     }
 
     gradesOverview() {

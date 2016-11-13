@@ -10,8 +10,9 @@
   "content_scripts": [
     {
       "matches": [
-        "*://cmg.prostejov.cz/*",
-        "*://*.cmgpv.cz/*"
+        "*://cmg.prostejov.cz/bakaweb/*",
+        "*://cmg.prostejov.cz/webrodicu/*",
+        "*://bakalari.cmgpv.cz/*"
       ],
       "js": [
         "onPageLoad.js"
