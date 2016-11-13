@@ -48,11 +48,11 @@ class Predictor {
         });
 
         document.getElementsByTagName('html')[0].style.visibility = 'visible';
-        document.getElementsByClassName('pr-loader')[0].hide();
+        $('.pr-loader').hide();
 
         $('a').on('click', function() {
             document.getElementsByTagName('html')[0].style.visibility = 'hidden';
-            document.getElementsByClassName('pr-loader')[0].show();
+            $('.pr-loader').show();
         });
     }
 
