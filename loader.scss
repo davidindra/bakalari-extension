@@ -82,6 +82,13 @@ div.pravemenu2 div {
   sup {
     font-weight: bold;
   }
+
+  sub {
+    transform: rotate(-60deg);
+    display: inline-block;
+    vertical-align: -1px;
+    margin-left: -3px;
+  }
 }
 
 .znnovejsi {
