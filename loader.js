@@ -92,12 +92,17 @@ class Predictor {
              '<td>' + earnedTotal + '/' + maximumTotal + '</td>'
              );*/
 
+            let g1 = predictor.neededPoints(earnedTotal, maximumTotal, 89.5);
+            let g2 = predictor.neededPoints(earnedTotal, maximumTotal, 74.5);
+            let g3 = predictor.neededPoints(earnedTotal, maximumTotal, 54.5);
+            let g4 = predictor.neededPoints(earnedTotal, maximumTotal, 39.5);
+
             $(this).find('td.predm:nth-child(2)')
                 .attr('title', null)
                 .html(
                     `<div data-ot="
                     ${earnedTotal} / ${maximumTotal}<br>
-                    1: ${predictor.neededPoints(earnedTotal, maximumTotal, 89.5)}
+                    1: ${g1[0] == 'more' ? g1[1] : '0'}/${g1[1]}<br>
                     " class="detprumerdiv pr-grade-${predictor.grade(ratioTotal)}">
                     ${(maximumTotal == 0 ? '-' : (ratioTotal + '% (' + predictor.grade(ratioTotal) + ')'))}
                     </div>`
@@ -115,9 +120,9 @@ class Predictor {
 
     neededPoints(earned, maximum, limit){
         if(this.grade(limit) >= this.grade(earned / maximum * 100)) {
-            return Math.ceil(((limit * maximum) / 100 - earned) / (1 - (limit / 100)));
+            return ['more', Math.ceil(((limit * maximum) / 100 - earned) / (1 - (limit / 100)))];
         }else{
-            return Math.floor(((limit * maximum) / 100 - earned) / (1 - (limit / 100)));
+            return ['less', -Math.floor(((limit * maximum) / 100 - earned) / (1 - (limit / 100)))];
         }
     }
 }
