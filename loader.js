@@ -119,10 +119,10 @@ class Predictor {
     }
 
     neededPoints(earned, maximum, limit){
-        if(predictor.grade(limit) >= predictor.grade(earned / maximum * 100)) {
+        if(predictor.grade(limit) <= predictor.grade(earned / maximum * 100)) {
             return ['more', Math.ceil(((limit * maximum) / 100 - earned) / (1 - (limit / 100)))];
         }else{
-            return ['less', Math.floor(((limit * maximum) / 100 - earned) / (1 - (limit / 100)))];
+            return ['less', -Math.floor(((limit * maximum) / 100 - earned) / (1 - (limit / 100)))];
         }
     }
 }
