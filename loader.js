@@ -92,10 +92,10 @@ class Predictor {
              '<td>' + earnedTotal + '/' + maximumTotal + '</td>'
              );*/
 
-            let g1 = predictor.neededPoints(earnedTotal, maximumTotal, 89.5);
-            let g2 = predictor.neededPoints(earnedTotal, maximumTotal, 74.5);
-            let g3 = predictor.neededPoints(earnedTotal, maximumTotal, 54.5);
-            let g4 = predictor.neededPoints(earnedTotal, maximumTotal, 39.5);
+            var g1 = predictor.neededPoints(earnedTotal, maximumTotal, 89.5);
+            var g2 = predictor.neededPoints(earnedTotal, maximumTotal, 74.5);
+            var g3 = predictor.neededPoints(earnedTotal, maximumTotal, 54.5);
+            var g4 = predictor.neededPoints(earnedTotal, maximumTotal, 39.5);
 
             $(this).find('td.predm:nth-child(2)')
                 .attr('title', null)
@@ -125,7 +125,11 @@ class Predictor {
         if(predictor.grade(limit) < predictor.grade(earned / maximum * 100)) {
             return ['more', Math.ceil(((limit * maximum) / 100 - earned) / (1 - (limit / 100)))];
         }else{
-            return ['less', -Math.floor(((limit * maximum) / 100 - earned) / (1 - (limit / 100)))];
+            if(predictor.grade(limit) == predictor.grade(earned / maximum * 100)){
+                return ['more', 0];
+            }else{
+                return ['less', -Math.floor(((limit * maximum) / 100 - earned) / (1 - (limit / 100)))];
+            }
         }
     }
 }
