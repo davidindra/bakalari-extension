@@ -80,7 +80,7 @@ div.pr-users {
   bottom: 10px;
   right: 3px;
   position: fixed;
-  width: 25ex;
+  width: 30ex;
   font-size: .9em; }
   div.pr-users .heading {
     font-size: 1.4em;
@@ -93,9 +93,10 @@ table.loglinktable {
   width: 100%; }
   table.loglinktable .loglink {
     padding: 2px;
-    background-color: white;
+    background-color: transparent;
     text-align: right; }
     table.loglinktable .loglink:hover {
-      font-weight: bold; }
+      font-weight: bold;
+      background-color: white; }
 
 /*# sourceMappingURL=loader.css.map */
