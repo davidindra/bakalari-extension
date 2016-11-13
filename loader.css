@@ -48,12 +48,13 @@ img#pr-logo {
 #cphmain_roundprub_RPC {
   background-color: white !important; }
 
-#cphmain_roundprub, .radekznamky {
+#cphmain_roundprub, .radekznamky,
+#cphmain_roundpolo {
   width: 100%;
   cursor: default; }
 
 .outround {
-  margin-top: 30pt;
+  margin-top: 40pt;
   margin-left: 0; }
 
 .detznamka, .znnovejsi {

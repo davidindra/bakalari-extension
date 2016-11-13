@@ -48,14 +48,15 @@ $grade-colors: (
 }
 
 // 100% main table width
-#cphmain_roundprub, .radekznamky {
+#cphmain_roundprub, .radekznamky,
+#cphmain_roundpolo{
   width: 100%;
   cursor: default;
 }
 
 // fix top margin
 .outround {
-  margin-top: 30pt;
+  margin-top: 40pt;
   margin-left: 0;
 }
 
