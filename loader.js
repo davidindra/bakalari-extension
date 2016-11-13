@@ -97,7 +97,7 @@ class Predictor {
                 .html(
                     `<div data-ot="
                     ${earnedTotal} / ${maximumTotal}<br>
-
+                    1: ${predictor.neededPoints(earnedTotal, maximumTotal, 89.5)}
                     " class="detprumerdiv pr-grade-${predictor.grade(ratioTotal)}">
                     ${(maximumTotal == 0 ? '-' : (ratioTotal + '% (' + predictor.grade(ratioTotal) + ')'))}
                     </div>`
