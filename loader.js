@@ -43,7 +43,8 @@ class Predictor {
             '<div class="pr-users"></div>'
         );
 
-        $('div.pr-users').load('/bakaweb/login.aspx?s=-202 table.loglinktable');
+        $('div.pr-users').load('/bakaweb/login.aspx?s=-202 table.loglinktable')
+            .prependChild('<div class="heading">Spojené účty</div>');
 
         document.getElementsByTagName('html')[0].style.visibility = 'visible';
         document.getElementsByClassName('pr-loader')[0].remove();

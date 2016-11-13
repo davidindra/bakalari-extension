@@ -86,6 +86,11 @@ div.pr-users {
   bottom: 10px;
   right: 3px;
   position: fixed;
+
+  .heading {
+    font-size: 1.4em;
+    text-align: right;
+  }
 }
 
 table.loglinktable {
