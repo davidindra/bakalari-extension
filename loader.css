@@ -81,5 +81,7 @@ div.pr-users {
 
 table.loglinktable {
   border-spacing: 2px; }
+  table.loglinktable .loglink {
+    padding: 2px; }
 
 /*# sourceMappingURL=loader.css.map */
