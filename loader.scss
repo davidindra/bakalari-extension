@@ -60,6 +60,11 @@ $grade-colors: (
   margin-left: 0;
 }
 
+// remove advert
+div.advertout {
+  display: none;
+}
+
 // fix right menu
 div.pravemenu2 div {
   display: inline-block;
