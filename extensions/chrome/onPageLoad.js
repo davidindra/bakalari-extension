@@ -16,16 +16,6 @@ styles.innerHTML =
 document.getElementsByTagName('html')[0].appendChild(styles);
 document.getElementsByTagName('html')[0].appendChild(loader);
 
-var predictorLoaderShow = function(){
-    document.getElementsByTagName('html')[0].style.visibility = 'hidden';
-    document.getElementsByClassName('pr-loader')[0].style.display = 'block';
-}
-
-var predictorLoaderHide = function(){
-    document.getElementsByTagName('html')[0].style.visibility = 'visible';
-    document.getElementsByClassName('pr-loader')[0].style.display = 'none';
-}
-
 window.onload = function () {
 
     if (document.getElementsByTagName('frameset').length == 0) {
