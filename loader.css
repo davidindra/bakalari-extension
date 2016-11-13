@@ -10,7 +10,7 @@ img#pr-logo {
 
 /* GRADES OVERVIEW */
 .radekznamky td {
-  vertical-align: middle; }
+  vertical-align: baseline; }
 
 .pr-grade-1 {
   color: #00C91D !important; }
