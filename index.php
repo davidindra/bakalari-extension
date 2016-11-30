@@ -11,8 +11,7 @@
     <meta property="og:type" content="product"/>
     <meta property="og:locale" content="cs_cz"/>
     <meta property="og:title" content="Předvídač známek"/>
-    <meta property="og:description"
-          content="Doplněk pro Bakaláře, který přidává skvělé funkce, jakými je například předvídání známek."/>
+    <meta property="og:description" content="Doplněk pro Bakaláře, který přidává skvělé funkce, jakými je například předvídání známek."/>
     <meta property="og:image" content="https://predvidac.davidindra.cz/opengraph.png"/>
     <meta property="og:image:width" content="1200"/>
     <meta property="og:image:height" content="650"/>
