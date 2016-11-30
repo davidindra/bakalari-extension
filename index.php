@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/favicon.ico">
 
+    <!--<meta property="fb:app_id" content="1810644119194832"/>-->
     <meta property="og:url" content="https://predvidac.davidindra.cz"/>
     <meta property="og:type" content="product"/>
-    <!--<meta property="fb:app_id" content="1810644119194832"/>-->
     <meta property="og:locale" content="cs_cz"/>
     <meta property="og:title" content="Předvídač známek"/>
     <meta property="og:description"
@@ -119,6 +119,7 @@
 
 </body>
 </html>
+
 
 <?php
 /*error_reporting(0);
