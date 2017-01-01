@@ -1,3 +1,31 @@
+/* GENERAL TEMPLATE */
+// Top navbar
+.phmenu, .pmenu {
+  background: #ffeb3b !important;
+  padding: 0 !important;
+
+  &, .phmenu .dx, .phmenu .dx>li {
+    height: 35px !important;
+  }
+}
+
+.phmenu .dx>li{
+  div, a {
+    padding: 0 10px !important;
+  }
+
+  span {
+    line-height: 35px !important;
+    padding: 0 !important;
+  }
+}
+
+.dxmLite .dxm-main .dxm-hovered {
+  background-color: #fdd835;
+}
+
+
+
 img#pr-logo {
   width: 30px;
   height: 30px;

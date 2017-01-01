@@ -1,108 +1,164 @@
+/* GENERAL TEMPLATE */
+.phmenu, .pmenu {
+  background: #ffeb3b !important;
+  padding: 0 !important;
+}
+
+.phmenu, .phmenu .phmenu .dx, .phmenu .phmenu .dx > li, .pmenu, .pmenu .phmenu .dx, .pmenu .phmenu .dx > li {
+  height: 35px !important;
+}
+
+.phmenu .dx > li div, .phmenu .dx > li a {
+  padding: 0 10px !important;
+}
+
+.phmenu .dx > li span {
+  line-height: 35px !important;
+  padding: 0 !important;
+}
+
+.dxmLite .dxm-main .dxm-hovered {
+  background-color: #fdd835;
+}
+
 img#pr-logo {
   width: 30px;
   height: 30px;
   position: fixed;
   visibility: visible !important;
   top: 10px;
-  right: 10px; }
-  img#pr-logo.grayscale {
-    filter: grayscale(100%); }
+  right: 10px;
+}
+
+img#pr-logo.grayscale {
+  filter: grayscale(100%);
+}
 
 /* GRADES OVERVIEW */
 .radekznamky td {
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 .pr-grade-1 {
-  color: #00C91D !important; }
+  color: #00C91D !important;
+}
 
 .pr-grade-bg-1 {
-  background-color: #00C91D !important; }
+  background-color: #00C91D !important;
+}
 
 .pr-grade-2 {
-  color: #9bc600 !important; }
+  color: #9bc600 !important;
+}
 
 .pr-grade-bg-2 {
-  background-color: #9bc600 !important; }
+  background-color: #9bc600 !important;
+}
 
 .pr-grade-3 {
-  color: #FFC800 !important; }
+  color: #FFC800 !important;
+}
 
 .pr-grade-bg-3 {
-  background-color: #FFC800 !important; }
+  background-color: #FFC800 !important;
+}
 
 .pr-grade-4 {
-  color: #E8730C !important; }
+  color: #E8730C !important;
+}
 
 .pr-grade-bg-4 {
-  background-color: #E8730C !important; }
+  background-color: #E8730C !important;
+}
 
 .pr-grade-5 {
-  color: #FF1D0D !important; }
+  color: #FF1D0D !important;
+}
 
 .pr-grade-bg-5 {
-  background-color: #FF1D0D !important; }
+  background-color: #FF1D0D !important;
+}
 
 .smaller {
-  font-size: smaller; }
+  font-size: smaller;
+}
 
 #cphmain_roundprub_RPC {
-  background-color: white !important; }
+  background-color: white !important;
+}
 
 #cphmain_roundprub, .radekznamky,
 #cphmain_roundpolo {
   width: 100%;
-  cursor: default; }
+  cursor: default;
+}
 
 .outround {
   margin-top: 30pt;
-  margin-left: 0; }
+  margin-left: 0;
+}
 
 div.advertout {
-  display: none !important; }
+  display: none !important;
+}
 
 div.pravemenu2 div {
-  display: inline-block; }
+  display: inline-block;
+}
 
 .detznamka, .znnovejsi {
   font-weight: normal;
-  font-size: inherit; }
+  font-size: inherit;
+}
 
 .detznamka {
-  font-size: 16px; }
-  .detznamka sup {
-    font-weight: bold; }
+  font-size: 16px;
+}
+
+.detznamka sup {
+  font-weight: bold;
+}
 
 .znnovejsi {
   border: 1px dotted #2d1010;
-  border-radius: 10pt; }
+  border-radius: 10pt;
+}
 
 form#formbaka {
   width: calc(100vw - 25ex - 30px);
-  margin: 10px 0 0 10px; }
+  margin: 10px 0 0 10px;
+}
 
 #stranka {
-  width: 100%; }
+  width: 100%;
+}
 
 div.pr-users {
   bottom: 10px;
   right: 3px;
   position: fixed;
   width: 30ex;
-  font-size: .9em; }
-  div.pr-users .heading {
-    font-size: 1.4em;
-    text-align: right;
-    cursor: default;
-    font-weight: bold; }
+  font-size: .9em;
+}
+
+div.pr-users .heading {
+  font-size: 1.4em;
+  text-align: right;
+  cursor: default;
+  font-weight: bold;
+}
 
 table.loglinktable {
   border-spacing: 2px;
-  width: 100%; }
-  table.loglinktable .loglink {
-    padding: 2px;
-    background-color: transparent;
-    text-align: right; }
-    table.loglinktable .loglink a:hover {
-      font-weight: bold; }
+  width: 100%;
+}
 
-/*# sourceMappingURL=loader.css.map */
+table.loglinktable .loglink {
+  padding: 2px;
+  background-color: transparent;
+  text-align: right;
+}
+
+table.loglinktable .loglink a:hover {
+  font-weight: bold;
+}
