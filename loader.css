@@ -68,6 +68,22 @@ div.pravemenu2, div.pravemenu2 div.cmout {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 
+.flyplan .dodatable {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+#popup_PW-1 > div.dxpc-mainDiv, .dxpcLite > div.dxpc-mainDiv {
+  background-color: #ffeb3b !important;
+  border: 1px solid #fdd835 !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+#popup_PW-1 > div.dxpc-mainDiv > div.dxpc-header, .dxpcLite > div.dxpc-mainDiv > div.dxpc-header {
+  background-color: #fdd835 !important;
+  border: 0 !important;
+}
+
 img#pr-logo {
   width: 30px;
   height: 30px;
@@ -79,6 +95,11 @@ img#pr-logo {
 
 img#pr-logo.grayscale {
   filter: grayscale(100%);
+}
+
+/* MAIN CONTENT */
+#stranka #hlavni #cphmain_Panelprub td#cphmain_roundprub_HC.dxrpHeader.dx-borderBox {
+  background-color: #ffee58 !important;
 }
 
 /* GRADES OVERVIEW */
