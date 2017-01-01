@@ -30,8 +30,11 @@ $navbarHeight: 35px;
 #hlavicka { // header
   background-color: #ffeb3b;
 
-  #hlavickaleva {
+  .hlavickaleva {
     background: url("//predvidac.davidindra.cz/images/mainlogo.png");
+    margin-top: 16px;
+    margin-left: 12px;
+    background-size: 100% auto;
   }
 }
 
