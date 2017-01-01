@@ -17,6 +17,10 @@ $navbarHeight: 35px;
 }
 
 .phmenu .dx>li{ // one item
+  &.dxm-selected {
+    background-color: #fdd835;
+  }
+
   div, a { // item wrapper
     padding: 0 10px !important;
   }

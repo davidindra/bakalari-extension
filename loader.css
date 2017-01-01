@@ -13,6 +13,10 @@
   height: 35px !important;
 }
 
+.phmenu .dx > li.dxm-selected {
+  background-color: #fdd835;
+}
+
 .phmenu .dx > li div, .phmenu .dx > li a {
   padding: 0 10px !important;
 }
