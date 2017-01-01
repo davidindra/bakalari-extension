@@ -2,8 +2,7 @@
 // Top navbar
 $navbarHeight: 35px;
 
-
-.phmenu, .pmenu { // whole top navbar
+.phmenu, .pmenu { // whole top navbar wrapper
   background: #fdd835 !important;
   padding: 0 !important;
 
@@ -23,18 +22,39 @@ $navbarHeight: 35px;
   }
 }
 
-.dxmLite .dxm-main .dxm-hovered { // item on hover
-  background-color: #fbc02d;
+.dxmLite { // whole navbar
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+
+  .dxm-main .dxm-hovered { // item on hover
+    background-color: #fbc02d;
+  }
 }
 
 #hlavicka { // header
   background-color: #ffeb3b;
+  padding: 1em 2em 1em 1em !important;
 
-  .hlavickaleva {
+  .hlavickaleva { // logo wrapper
     background: url("//predvidac.davidindra.cz/images/mainlogo.png");
     margin-top: 16px;
     margin-left: 12px;
     background-size: 100% auto;
+  }
+
+  .globlogjmeno { // box with user info
+    background-color: transparent;
+  }
+
+  .pimenu { // dropdown menu
+    background-color: #ffeb3b !important;
+    border: 1px solid #fdd835 !important;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2) !important;
+    padding: 0;
+
+    .dxm-hovered { // dropdown item hovered
+      background-color: #fdd835 !important;
+      border-color: #fdd835 !important;
+    }
   }
 }
 
