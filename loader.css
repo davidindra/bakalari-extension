@@ -41,7 +41,7 @@
   padding: 0;
 }
 
-.dxmLite .pimenu .dxm-hovered {
+.dxmLite .pimenu .dxm-hovered, .dxmLite .pimenu .dxm-selected {
   background-color: #fdd835 !important;
   border-color: #fdd835 !important;
 }
