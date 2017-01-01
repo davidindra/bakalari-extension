@@ -1,4 +1,9 @@
 /* GENERAL TEMPLATE */
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  font-family: 'Roboto', sans-serif !important;
+}
+
 .phmenu, .pmenu {
   background: #fdd835 !important;
   padding: 0 !important;
