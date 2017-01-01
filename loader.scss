@@ -5,7 +5,7 @@
 }
 
 // Top navbar
-$navbarHeight: 35px;
+$navbarHeight: 40px;
 
 .phmenu, .pmenu { // whole top navbar wrapper
   background: #fdd835 !important;
@@ -22,7 +22,7 @@ $navbarHeight: 35px;
   }
 
   div, a { // item wrapper
-    padding: 0 10px !important;
+    padding: 0 15px !important;
   }
 
   span { // text wrapper

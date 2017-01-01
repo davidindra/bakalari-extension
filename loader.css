@@ -10,7 +10,7 @@
 }
 
 .phmenu, .phmenu .phmenu .dx, .phmenu .phmenu .dx > li, .pmenu, .pmenu .phmenu .dx, .pmenu .phmenu .dx > li {
-  height: 35px !important;
+  height: 40px !important;
 }
 
 .phmenu .dx > li.dxm-selected {
@@ -18,11 +18,11 @@
 }
 
 .phmenu .dx > li div, .phmenu .dx > li a {
-  padding: 0 10px !important;
+  padding: 0 15px !important;
 }
 
 .phmenu .dx > li span {
-  line-height: 35px !important;
+  line-height: 40px !important;
   padding: 0 !important;
 }
 
