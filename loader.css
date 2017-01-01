@@ -1,6 +1,6 @@
 /* GENERAL TEMPLATE */
 .phmenu, .pmenu {
-  background: #ffeb3b !important;
+  background: #fdd835 !important;
   padding: 0 !important;
 }
 
@@ -18,7 +18,15 @@
 }
 
 .dxmLite .dxm-main .dxm-hovered {
-  background-color: #fdd835;
+  background-color: #fbc02d;
+}
+
+#hlavicka {
+  background-color: #ffeb3b;
+}
+
+#hlavicka #hlavickaleva {
+  background: url("//predvidac.davidindra.cz/images/mainlogo.png");
 }
 
 img#pr-logo {

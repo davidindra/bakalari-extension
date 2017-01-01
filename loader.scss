@@ -1,27 +1,38 @@
 /* GENERAL TEMPLATE */
 // Top navbar
-.phmenu, .pmenu {
-  background: #ffeb3b !important;
+$navbarHeight: 35px;
+
+
+.phmenu, .pmenu { // whole top navbar
+  background: #fdd835 !important;
   padding: 0 !important;
 
   &, .phmenu .dx, .phmenu .dx>li {
-    height: 35px !important;
+    height: $navbarHeight !important;
   }
 }
 
-.phmenu .dx>li{
-  div, a {
+.phmenu .dx>li{ // one item
+  div, a { // item wrapper
     padding: 0 10px !important;
   }
 
-  span {
-    line-height: 35px !important;
+  span { // text wrapper
+    line-height: $navbarHeight !important;
     padding: 0 !important;
   }
 }
 
-.dxmLite .dxm-main .dxm-hovered {
-  background-color: #fdd835;
+.dxmLite .dxm-main .dxm-hovered { // item on hover
+  background-color: #fbc02d;
+}
+
+#hlavicka { // header
+  background-color: #ffeb3b;
+
+  #hlavickaleva {
+    background: url("//predvidac.davidindra.cz/images/mainlogo.png");
+  }
 }
 
 
