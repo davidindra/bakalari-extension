@@ -64,6 +64,7 @@ div.pravemenu2 { // little right top submenu wrapper
 
 #hlavicka { // header
   background-color: #ffeb3b;
+  background: #ffeb3b; // prevent template from changing background
   padding: 1em 2em 1em 1em !important;
 
   .hlavickaleva { // logo wrapper
