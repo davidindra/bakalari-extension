@@ -107,8 +107,12 @@ img#pr-logo.grayscale {
 }
 
 /* MAIN CONTENT */
-#stranka #hlavni #cphmain_Panelprub td#cphmain_roundprub_HC.dxrpHeader.dx-borderBox, #stranka #hlavni .dxpc-header {
+#stranka #hlavni td.dxrpHeader.dx-borderBox, #stranka #hlavni .dxpc-header {
   background-color: #ffee58 !important;
+}
+
+#stranka #hlavni .dxrpHS {
+  border-bottom: 1px !important;
 }
 
 .logintable {

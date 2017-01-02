@@ -117,8 +117,12 @@ img#pr-logo {
 
 /* MAIN CONTENT */
 #stranka #hlavni {
-  #cphmain_Panelprub td#cphmain_roundprub_HC.dxrpHeader.dx-borderBox, .dxpc-header { // table header
+  td.dxrpHeader.dx-borderBox, .dxpc-header { // table header
     background-color: #ffee58 !important;
+  }
+
+  .dxrpHS {
+    border-bottom: 1px !important;
   }
 }
 
