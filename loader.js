@@ -2,7 +2,7 @@ class Predictor {
     constructor(doc) {
         this.doc = doc;
 
-        console.log("Loading jQuery...");
+        //console.log("Loading jQuery...");
         var script = document.createElement("script");
         script.onload = this.setup;
         script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js";
@@ -11,7 +11,7 @@ class Predictor {
 
     setup() {
         this.doc = $(this.doc);
-        console.log('Predictor 0.1');
+        //console.log('Predictor 0.1');
 
         $('head').append(
             '<link type="text/css" href="//predvidac.davidindra.cz/loader.css" rel="stylesheet">' +

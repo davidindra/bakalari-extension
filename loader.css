@@ -247,17 +247,17 @@ div.pr-users .heading {
   font-weight: bold;
 }
 
-table.loglinktable {
+div.pr-users table.loglinktable {
   border-spacing: 2px;
   width: 100%;
 }
 
-table.loglinktable .loglink {
+div.pr-users table.loglinktable .loglink {
   padding: 2px;
   background-color: transparent;
   text-align: right;
 }
 
-table.loglinktable .loglink a:hover {
+div.pr-users table.loglinktable .loglink a:hover {
   font-weight: bold;
 }

@@ -245,19 +245,20 @@ div.pr-users {
     cursor: default;
     font-weight: bold;
   }
-}
 
-table.loglinktable {
-  border-spacing: 2px;
-  width: 100%;
+  table.loglinktable {
+    border-spacing: 2px;
+    width: 100%;
 
-  .loglink {
-    padding: 2px;
-    background-color: transparent;
-    text-align: right;
+    .loglink {
+      padding: 2px;
+      background-color: transparent;
+      text-align: right;
 
-    a:hover {
-      font-weight: bold;
+      a:hover {
+        font-weight: bold;
+      }
     }
   }
+
 }
