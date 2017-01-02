@@ -232,6 +232,37 @@ form#formbaka {
   width: 100%;
 }
 
+// Actual list of users
+.logintable {
+  .loglinktable {
+    width: 100%;
+
+    .loglink {
+      background-color: #fff59d !important;
+      &:hover {
+        background-color: #fff9c4 !important;
+      }
+    }
+  }
+
+  tr:nth-child(3) td:nth-child(2)>div:first-child {
+    position: relative;
+
+    &::after { // fix Bakalari typo - účtú -> účtů (disappears on hover)
+      content: "ů";
+      position: absolute;
+      right: 0;
+      background-color: #ffeb3b;
+      transition: opacity .25s linear;
+    }
+
+    &:hover::after {
+      opacity: 0;
+    }
+  }
+}
+
+// Right list of users
 div.pr-users {
   bottom: 10px;
   right: 3px;
