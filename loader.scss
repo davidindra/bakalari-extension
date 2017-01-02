@@ -131,6 +131,19 @@ img#pr-logo {
   background-color: #ffeb3b;
 }
 
+/* TIMETABLE */
+.r_bunkazm { // changed cell
+  background-color: #ffcdd2 !important;
+
+  .rinfo { // changed cell "i" sign
+    background-color: #ef9a9a;
+  }
+}
+
+.r_bunkamo { // some special cell
+  background-color: #a5d6a7 !important;
+}
+
 /* GRADES OVERVIEW */
 
 // align texts to vertical middle
