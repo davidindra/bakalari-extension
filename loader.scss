@@ -37,7 +37,7 @@ $navbarHeight: 40px;
 
 .dxmLite { // whole navbar
   .dxm-main .dxm-hovered { // item on hover
-    background-color: #fbc02d;
+    background-color: #fbc02d !important;
   }
 
   .pimenu { // dropdown menu
