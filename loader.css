@@ -32,7 +32,7 @@
 }
 
 .dxmLite .dxm-main .dxm-hovered {
-  background-color: #fbc02d;
+  background-color: #fbc02d !important;
 }
 
 .dxmLite .pimenu {
