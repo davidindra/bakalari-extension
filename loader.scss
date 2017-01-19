@@ -1,3 +1,108 @@
+/* GENERAL TEMPLATE */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+// Top navbar
+$navbarHeight: 40px;
+
+.phmenu, .pmenu { // whole top navbar wrapper
+  background: #fdd835 !important;
+  padding: 0 !important;
+
+  &, .phmenu .dx, .phmenu .dx>li {
+    height: $navbarHeight !important;
+  }
+}
+
+.phmenu .dx>li{ // one item
+  &.dxm-selected {
+    background-color: #fdd835;
+  }
+
+  div, a { // item wrapper
+    padding: 0 15px !important;
+  }
+
+  span { // text wrapper
+    line-height: $navbarHeight !important;
+    padding: 0 !important;
+  }
+}
+
+#panelmenu { // navbar wrapper
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.dxmLite { // whole navbar
+  .dxm-main .dxm-hovered { // item on hover
+    background-color: #fbc02d !important;
+  }
+
+  .pimenu { // dropdown menu
+    background-color: #ffeb3b !important;
+    border: 1px solid #fdd835 !important;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2) !important;
+    padding: 0;
+
+    .dxm-hovered, .dxm-selected { // dropdown item hovered
+      background-color: #fdd835 !important;
+      border-color: #fdd835 !important;
+    }
+  }
+}
+
+div.pravemenu2 { // little right top submenu wrapper
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+
+  &, & div.cmout {
+    background-color: #fdd835 !important;
+    border: 0 !important;
+  }
+}
+
+#hlavicka { // header
+  background-color: #ffeb3b;
+  background: #ffeb3b; // prevent template from changing background
+  padding: 1em 2em 1em 1em !important;
+
+  .hlavickaleva { // logo wrapper
+    background: url("//predvidac.davidindra.cz/images/mainlogo.png");
+    margin-top: 16px;
+    margin-left: 12px;
+    background-size: 100% auto;
+  }
+
+  .globlogjmeno { // box with user info
+    background-color: transparent;
+  }
+}
+
+.flyplan { // some popup window
+  background-color: #ffeb3b !important;
+  border: 1px solid #fdd835 !important;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+
+  .dodatable {
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
+
+#popup_PW-1, .dxpcLite { // lang change
+  >div.dxpc-mainDiv { // main wrapper
+    background-color: #ffeb3b !important;
+    border: 1px solid #fdd835 !important;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+
+    >div.dxpc-header { // header
+      background-color: #fdd835 !important;
+      border: 0 !important;
+    }
+  }
+}
+
 img#pr-logo {
   width: 30px;
   height: 30px;
@@ -9,6 +114,34 @@ img#pr-logo {
   &.grayscale {
     filter: grayscale(100%);
   }
+}
+
+/* MAIN CONTENT */
+#stranka #hlavni {
+  td.dxrpHeader.dx-borderBox, .dxpc-header { // table header
+    background-color: #ffee58 !important;
+  }
+
+  .dxrpHS {
+    border-bottom: 1px !important;
+  }
+}
+
+.logintable { // login table
+  background-color: #ffeb3b;
+}
+
+/* TIMETABLE */
+.r_bunkazm { // changed cell
+  background-color: #ffcdd2 !important;
+
+  .rinfo { // changed cell "i" sign
+    background-color: #ef9a9a;
+  }
+}
+
+.r_bunkamo { // some special cell
+  background-color: #a5d6a7 !important;
 }
 
 /* GRADES OVERVIEW */
@@ -99,6 +232,37 @@ form#formbaka {
   width: 100%;
 }
 
+// Actual list of users
+.logintable {
+  .loglinktable {
+    width: 100%;
+
+    .loglink {
+      background-color: #fff59d !important;
+      &:hover {
+        background-color: #fff9c4 !important;
+      }
+    }
+  }
+
+  tr:nth-child(3) td:nth-child(2)>div:first-child {
+    position: relative;
+
+    &::after { // fix Bakalari typo - účtú -> účtů (disappears on hover)
+      content: "ů";
+      position: absolute;
+      right: 0;
+      background-color: #ffeb3b;
+      transition: opacity .25s linear;
+    }
+
+    &:hover::after {
+      opacity: 0;
+    }
+  }
+}
+
+// Right list of users
 div.pr-users {
   bottom: 10px;
   right: 3px;
@@ -112,19 +276,20 @@ div.pr-users {
     cursor: default;
     font-weight: bold;
   }
-}
 
-table.loglinktable {
-  border-spacing: 2px;
-  width: 100%;
+  table.loglinktable {
+    border-spacing: 2px;
+    width: 100%;
 
-  .loglink {
-    padding: 2px;
-    background-color: transparent;
-    text-align: right;
+    .loglink {
+      padding: 2px;
+      background-color: transparent;
+      text-align: right;
 
-    a:hover {
-      font-weight: bold;
+      a:hover {
+        font-weight: bold;
+      }
     }
   }
+
 }

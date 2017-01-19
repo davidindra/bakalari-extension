@@ -1,108 +1,292 @@
+@charset "UTF-8";
+/* GENERAL TEMPLATE */
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.phmenu, .pmenu {
+  background: #fdd835 !important;
+  padding: 0 !important;
+}
+
+.phmenu, .phmenu .phmenu .dx, .phmenu .phmenu .dx > li, .pmenu, .pmenu .phmenu .dx, .pmenu .phmenu .dx > li {
+  height: 40px !important;
+}
+
+.phmenu .dx > li.dxm-selected {
+  background-color: #fdd835;
+}
+
+.phmenu .dx > li div, .phmenu .dx > li a {
+  padding: 0 15px !important;
+}
+
+.phmenu .dx > li span {
+  line-height: 40px !important;
+  padding: 0 !important;
+}
+
+#panelmenu {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.dxmLite .dxm-main .dxm-hovered {
+  background-color: #fbc02d !important;
+}
+
+.dxmLite .pimenu {
+  background-color: #ffeb3b !important;
+  border: 1px solid #fdd835 !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) !important;
+  padding: 0;
+}
+
+.dxmLite .pimenu .dxm-hovered, .dxmLite .pimenu .dxm-selected {
+  background-color: #fdd835 !important;
+  border-color: #fdd835 !important;
+}
+
+div.pravemenu2 {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+div.pravemenu2, div.pravemenu2 div.cmout {
+  background-color: #fdd835 !important;
+  border: 0 !important;
+}
+
+#hlavicka {
+  background-color: #ffeb3b;
+  background: #ffeb3b;
+  padding: 1em 2em 1em 1em !important;
+}
+
+#hlavicka .hlavickaleva {
+  background: url("//predvidac.davidindra.cz/images/mainlogo.png");
+  margin-top: 16px;
+  margin-left: 12px;
+  background-size: 100% auto;
+}
+
+#hlavicka .globlogjmeno {
+  background-color: transparent;
+}
+
+.flyplan {
+  background-color: #ffeb3b !important;
+  border: 1px solid #fdd835 !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.flyplan .dodatable {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+#popup_PW-1 > div.dxpc-mainDiv, .dxpcLite > div.dxpc-mainDiv {
+  background-color: #ffeb3b !important;
+  border: 1px solid #fdd835 !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+#popup_PW-1 > div.dxpc-mainDiv > div.dxpc-header, .dxpcLite > div.dxpc-mainDiv > div.dxpc-header {
+  background-color: #fdd835 !important;
+  border: 0 !important;
+}
+
 img#pr-logo {
   width: 30px;
   height: 30px;
   position: fixed;
   visibility: visible !important;
   top: 10px;
-  right: 10px; }
-  img#pr-logo.grayscale {
-    filter: grayscale(100%); }
+  right: 10px;
+}
+
+img#pr-logo.grayscale {
+  filter: grayscale(100%);
+}
+
+/* MAIN CONTENT */
+#stranka #hlavni td.dxrpHeader.dx-borderBox, #stranka #hlavni .dxpc-header {
+  background-color: #ffee58 !important;
+}
+
+#stranka #hlavni .dxrpHS {
+  border-bottom: 1px !important;
+}
+
+.logintable {
+  background-color: #ffeb3b;
+}
+
+/* TIMETABLE */
+.r_bunkazm {
+  background-color: #ffcdd2 !important;
+}
+
+.r_bunkazm .rinfo {
+  background-color: #ef9a9a;
+}
+
+.r_bunkamo {
+  background-color: #a5d6a7 !important;
+}
 
 /* GRADES OVERVIEW */
 .radekznamky td {
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 .pr-grade-1 {
-  color: #00C91D !important; }
+  color: #00C91D !important;
+}
 
 .pr-grade-bg-1 {
-  background-color: #00C91D !important; }
+  background-color: #00C91D !important;
+}
 
 .pr-grade-2 {
-  color: #9bc600 !important; }
+  color: #9bc600 !important;
+}
 
 .pr-grade-bg-2 {
-  background-color: #9bc600 !important; }
+  background-color: #9bc600 !important;
+}
 
 .pr-grade-3 {
-  color: #FFC800 !important; }
+  color: #FFC800 !important;
+}
 
 .pr-grade-bg-3 {
-  background-color: #FFC800 !important; }
+  background-color: #FFC800 !important;
+}
 
 .pr-grade-4 {
-  color: #E8730C !important; }
+  color: #E8730C !important;
+}
 
 .pr-grade-bg-4 {
-  background-color: #E8730C !important; }
+  background-color: #E8730C !important;
+}
 
 .pr-grade-5 {
-  color: #FF1D0D !important; }
+  color: #FF1D0D !important;
+}
 
 .pr-grade-bg-5 {
-  background-color: #FF1D0D !important; }
+  background-color: #FF1D0D !important;
+}
 
 .smaller {
-  font-size: smaller; }
+  font-size: smaller;
+}
 
 #cphmain_roundprub_RPC {
-  background-color: white !important; }
+  background-color: white !important;
+}
 
 #cphmain_roundprub, .radekznamky,
 #cphmain_roundpolo {
   width: 100%;
-  cursor: default; }
+  cursor: default;
+}
 
 .outround {
   margin-top: 30pt;
-  margin-left: 0; }
+  margin-left: 0;
+}
 
 div.advertout {
-  display: none !important; }
+  display: none !important;
+}
 
 div.pravemenu2 div {
-  display: inline-block; }
+  display: inline-block;
+}
 
 .detznamka, .znnovejsi {
   font-weight: normal;
-  font-size: inherit; }
+  font-size: inherit;
+}
 
 .detznamka {
-  font-size: 16px; }
-  .detznamka sup {
-    font-weight: bold; }
+  font-size: 16px;
+}
+
+.detznamka sup {
+  font-weight: bold;
+}
 
 .znnovejsi {
   border: 1px dotted #2d1010;
-  border-radius: 10pt; }
+  border-radius: 10pt;
+}
 
 form#formbaka {
   width: calc(100vw - 25ex - 30px);
-  margin: 10px 0 0 10px; }
+  margin: 10px 0 0 10px;
+}
 
 #stranka {
-  width: 100%; }
+  width: 100%;
+}
+
+.logintable .loglinktable {
+  width: 100%;
+}
+
+.logintable .loglinktable .loglink {
+  background-color: #fff59d !important;
+}
+
+.logintable .loglinktable .loglink:hover {
+  background-color: #fff9c4 !important;
+}
+
+.logintable tr:nth-child(3) td:nth-child(2) > div:first-child {
+  position: relative;
+}
+
+.logintable tr:nth-child(3) td:nth-child(2) > div:first-child::after {
+  content: "ů";
+  position: absolute;
+  right: 0;
+  background-color: #ffeb3b;
+  transition: opacity .25s linear;
+}
+
+.logintable tr:nth-child(3) td:nth-child(2) > div:first-child:hover::after {
+  opacity: 0;
+}
 
 div.pr-users {
   bottom: 10px;
   right: 3px;
   position: fixed;
   width: 30ex;
-  font-size: .9em; }
-  div.pr-users .heading {
-    font-size: 1.4em;
-    text-align: right;
-    cursor: default;
-    font-weight: bold; }
+  font-size: .9em;
+}
 
-table.loglinktable {
+div.pr-users .heading {
+  font-size: 1.4em;
+  text-align: right;
+  cursor: default;
+  font-weight: bold;
+}
+
+div.pr-users table.loglinktable {
   border-spacing: 2px;
-  width: 100%; }
-  table.loglinktable .loglink {
-    padding: 2px;
-    background-color: transparent;
-    text-align: right; }
-    table.loglinktable .loglink a:hover {
-      font-weight: bold; }
+  width: 100%;
+}
 
-/*# sourceMappingURL=loader.css.map */
+div.pr-users table.loglinktable .loglink {
+  padding: 2px;
+  background-color: transparent;
+  text-align: right;
+}
+
+div.pr-users table.loglinktable .loglink a:hover {
+  font-weight: bold;
+}
