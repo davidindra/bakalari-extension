@@ -57,7 +57,7 @@ class Predictor {
             $(this).find('td.predm:nth-child(4) > table > tbody > tr.detznamka > td').each(function () {
                 if ($(this).text().length > 5) {
                     var earned = parseInt($(this).text().split(' ')[0]);
-                    var maximum = parseInt($(this).text().split(' ')[1].split('max')[1].split('b')[0]);
+                    var maximum = parseInt($(this).text().split(' ')[2].split('max')[1].split('b')[0]);
                     var valid = false;
                     if (typeof earned == 'number' && typeof maximum == 'number') {
                         earnedTotal += earned;
