@@ -59,7 +59,7 @@ class Predictor {
                     var earned = parseInt($(this).text().split(' ')[0]);
                     if(typeof $(this).text().split(' ')[2] == 'undefined') {
                         var maximum = parseInt($(this).text().split(' ')[1].split('max')[1].split('b')[0]);
-                    else {
+                    } else {
                         var maximum = parseInt($(this).text().split(' ')[2].split('max')[1].split('b')[0]);
                     }
                     var valid = false;
